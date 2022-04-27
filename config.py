@@ -16,15 +16,20 @@ def get_weather():
     sense.rotation = 90
 
     try:
-        print("pred zemanje konekcija")
-        engine = mariadb.connect(user= 'root',
-            password = '8223',
-            host = 'localhost',
-            port = '3306',
-            database = 'capstone_project')
-        print("zemena konekcija")
-    except:
-        print("nemoze")
+        conn = mariadb.connect(
+            user="root",
+            password="8223",
+            host="192.0.2.1",
+            port=3306,
+            database="employees"
+
+    )
+    except mariadb.Error as e:
+        print(f"Error connecting to MariaDB Platform: {e}")
+        sys.exit(1)
+
+    # Get Cursor
+    cur = conn.cursor()
 
 
     # try:
