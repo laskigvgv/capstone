@@ -52,7 +52,7 @@ def get_weather():
         localtime = time.asctime( time.localtime(time.time()) )
         print ("Local current time :", localtime)
 
-        querr = """INSERT INTO `weather_data`.`weather_station_data`(`temperature`,`humidity`,`weather_station_datacol`)VALUES(%s,%s,%s);"""
+        querr = """INSERT INTO `weather_data`.`weather_data`(`temperature`,`humidity`,`weather_station_datacol`)VALUES(%s,%s,%s);"""
         data = (temp, humidity, pressure)
         try:
             cur.execute(querr, data)
