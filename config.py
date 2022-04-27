@@ -54,7 +54,10 @@ def get_weather():
 
         querr = """INSERT INTO `weather_data`.`weather_station_data`(`temperature`,`humidity`,`weather_station_datacol`)VALUES(%s,%s,%s);"""
         data = (temp, humidity, pressure)
-        cur.execute(querr, data)
+        try:
+            cur.execute(querr, data)
+        except Exception as err:
+            print(err)
         conn.commit()
         print("zapisana data")
         red = (255 , 0 , 0)
