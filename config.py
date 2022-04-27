@@ -17,8 +17,8 @@ def get_weather():
 
     try:
         print("pred zemanje konekcija")
-        engine = mariadb.connect(user= 'capston',
-            password = 'lazar',
+        engine = mariadb.connect(user= 'root',
+            password = '8223',
             host = 'localhost',
             port = '3306',
             database = 'capstone_project')
