@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#lazarzdravkoski
 from sense_hat import SenseHat
 import time
 import sys
