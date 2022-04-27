@@ -15,6 +15,7 @@ def get_weather():
     sense.rotation = 90
 
     try:
+        print("pred zemanje konekcija")
         engine = sql.create_engine("mysql+pymysql://{username}:{passw}@localhost:3306/".format(username = "root", passw ="L.z3008994473001"))
         engine.connect()
         print("zemena konekcija")
