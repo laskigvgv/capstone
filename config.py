@@ -17,8 +17,8 @@ def get_weather():
 
     try:
         conn = mariadb.connect(
-            user="root",
-            password="8223",
+            user="capstone",
+            password="lazar",
             host="127.0.0.1",
             port=3306,
             database="employees"
