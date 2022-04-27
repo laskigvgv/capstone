@@ -24,6 +24,7 @@ def get_weather():
             database="capston_project"
 
     )
+        print("zemena konekcija")
     except mariadb.Error as e:
         print(f"Error connecting to MariaDB Platform: {e}")
         sys.exit(1)
