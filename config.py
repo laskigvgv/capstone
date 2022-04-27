@@ -25,7 +25,7 @@ def get_weather():
 
             localtime = time.asctime( time.localtime(time.time()) )
             print ("Local current time :", localtime)
-
+            daw
             red = (255 , 0 , 0)
             green = (0 , 255 , 0)
             blue = (0 , 0 , 255)
