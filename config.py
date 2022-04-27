@@ -14,15 +14,17 @@ def get_weather():
     sense.clear()
     sense.rotation = 90
 
-    # try:
-    #     engine = sql.create_engine('msql+mysqlconnector://root:L.z3008994473001@localhost:3306/capstone')
-    # except:
-    #     return {
-	# 			"error": {
-	# 				"status_code": 500,
-	# 				"message": "There was a problem connecting to the database. Check the provided credentials or if the database is available."
-	# 			}
-	# 		}
+    try:
+        engine = sql.create_engine("mysql+pymysql://{username}:{passw}@localhost:3306/".format(username = "root", passw ="L.z3008994473001"))
+        engine.connect()
+        print("zemena konekcija")
+    except:
+        return {
+				"error": {
+					"status_code": 500,
+					"message": "There was a problem connecting to the database. Check the provided credentials or if the database is available."
+				}
+			}
 
 
     try:
@@ -44,8 +46,8 @@ def get_weather():
         localtime = time.asctime( time.localtime(time.time()) )
         print ("Local current time :", localtime)
 
-        # engine.execute('INSERT INTO `weather_data`.`weather_station_data`(`temperature`,`humidity`,`weather_station_datacol`)VALUES({},{},{});'.format(temp,humidity,pressure))
-        
+        engine.execute('INSERT INTO `weather_data`.`weather_station_data`(`temperature`,`humidity`,`weather_station_datacol`)VALUES({},{},{});'.format(temp,humidity,pressure))
+        print("zapisana data")
         red = (255 , 0 , 0)
         green = (0 , 255 , 0)
         blue = (0 , 0 , 255)
