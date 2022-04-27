@@ -16,7 +16,7 @@ def get_weather():
 
     try:
         print("pred zemanje konekcija")
-        engine = sql.create_engine("mysql+pymysql://'{username}':'{passw}'@127.0.0.1:3306/".format(username = "capstone", passw ="lazar"))
+        engine = sql.create_engine("mysql+pymysql://{username}:{passw}@localhost:3306/".format(username = "capstone", passw ="lazar"))
         engine.connect()
         print("zemena konekcija")
     except:
