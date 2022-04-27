@@ -29,7 +29,7 @@ def get_weather():
        
         temp = sense.get_temperature()
         temp = round(temp, 1)
-        engine.execute('INSERT INTO weather_station_data (`temperature`) VALUES ({temp})'.format(temp=temp))
+        # engine.execute('INSERT INTO `weather_data`.`weather_station_data`(`temperature`,`humidity`,`weather_station_datacol`)VALUES({},{},{});'.format(temp,humidity,pressure))
         print("Temperature C", temp) 
 
 
@@ -43,6 +43,8 @@ def get_weather():
 
         localtime = time.asctime( time.localtime(time.time()) )
         print ("Local current time :", localtime)
+
+        engine.execute('INSERT INTO `weather_data`.`weather_station_data`(`temperature`,`humidity`,`weather_station_datacol`)VALUES({},{},{});'.format(temp,humidity,pressure))
         
         red = (255 , 0 , 0)
         green = (0 , 255 , 0)
