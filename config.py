@@ -2,6 +2,7 @@
 
 from sense_hat import SenseHat
 import sqlalchemy as sql
+import mariadb
 import time
 import sys
 
@@ -16,8 +17,11 @@ def get_weather():
 
     try:
         print("pred zemanje konekcija")
-        engine = sql.create_engine("mysql+pymysql://capstone:lazar@localhost:3306/capston_project;")
-        engine.connect()
+        engine = mariadb.connect(user= 'capston',
+            password = 'lazar',
+            host = 'localhost',
+            port = '3306',
+            database = 'capstone_project')
         print("zemena konekcija")
     except:
         print("nemoze")
