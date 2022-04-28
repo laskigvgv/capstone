@@ -127,7 +127,7 @@
 										<?php
 											echo $result["press"]
 										?>
-									</div>hPa
+									</div><big>hPa</big>
 								</div>
 								
 							</div>
