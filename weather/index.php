@@ -80,7 +80,7 @@
 							<div class="day">
 								<?php 
 									$conn = get_connection();
-									$sql = "SELECT DAYNAME(DATE(time_stamp)) as week_day, DATE(time_stamp) as datum, temperature as tmp, humidity as humm FROM weather_data ORDER BY id DESC;";
+									$sql = "SELECT DAYNAME(DATE(time_stamp)) as week_day, DATE(time_stamp) as datum, temperature as tmp, humidity as humm, pressure as press FROM weather_data ORDER BY id DESC;";
 									$result = $conn->query($sql)->fetch_assoc();
 
 									echo $result["week_day"];
@@ -117,16 +117,19 @@
 								</div>
 							</div>
 						</div>
-						<div class="forecast">
+						<div class="today forecast">
 							<div class="forecast-header">
 								<div class="day">Air Pressure</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="images/icons/icon-5.svg" alt="" width=48>
+							<div class="degree">
+									<div class="num">
+										<?php
+											echo $result["press"]
+										?>%	
+									</div>
 								</div>
-								<div class="degree">23<sup>o</sup>C</div>
-								<small>18<sup>o</sup></small>
+								<small>hPa</small>
 							</div>
 						</div>
 						
