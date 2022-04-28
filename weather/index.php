@@ -126,10 +126,10 @@
 									<div class="num">
 										<?php
 											echo $result["press"]
-										?>%	
-									</div>
+										?>
+									</div>hPa
 								</div>
-								<small>hPa</small>
+								
 							</div>
 						</div>
 						
