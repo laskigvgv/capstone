@@ -125,7 +125,7 @@
 							<div class="degree">
 									<div class="num">
 										<?php
-											echo $result["humm"]
+											echo $result["press"]
 										?>hPa
 									</div>
 								</div>
