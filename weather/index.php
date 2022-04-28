@@ -83,7 +83,7 @@
 									$sql = "SELECT time_stamp FROM weather_data;";
 									$result = $conn->query($sql)->fetch_assoc();
 
-									var_dump($result[0]["time_stamp"]);
+									var_dump($result[0]);
 
 								?>
 							</div>
