@@ -103,7 +103,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="forecast">
+						<div class="today forecast">
 							<div class="forecast-header">
 								<div class="day">Humidity</div>
 							</div> <!-- .forecast-header -->
@@ -112,7 +112,7 @@
 									<div class="num">
 										<?php
 											echo $result["humm"]
-										?>%
+										?>%	
 									</div>
 								</div>
 							</div>
