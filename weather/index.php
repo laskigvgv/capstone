@@ -92,7 +92,7 @@
 								</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
-								<div class="location">Gostivar</div>		
+								<!-- <div class="location">Gostivar</div>		 -->
 								<div class="degree">
 									<div class="num">
 										<?php
