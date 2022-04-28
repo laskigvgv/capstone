@@ -80,6 +80,9 @@
 							<div class="day">day
 								<?php 
 									$conn = get_connection();
+									$sql = "SELECT time_stamp FROM weather_data;";
+									$result = $conn->query($sql);
+
 									echo "lazar";
 
 								?>
