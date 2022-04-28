@@ -104,7 +104,7 @@
 							</div>
 						</div>
 						<div class="forecast">
-							<div class="forecast-header">
+							<div class="forecast-content">
 								<div class="day">Humidity</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
