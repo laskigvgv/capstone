@@ -88,7 +88,7 @@
 								?>
 							</div>
 								<div class="date"><?php 
-									$conn = get_connection();
+									// $conn = get_connection();
 									$sql = "SELECT DATE(time_stamp) as datum FROM weather_data ORDER BY id DESC;";
 									$result = $conn->query($sql)->fetch_assoc();
 
@@ -96,9 +96,14 @@
 								</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
-								<div class="location">New York</div>		
+								<div class="location">Gostivar</div>		
 								<div class="degree">
-									<div class="num">23<sup>o</sup>C</div>
+									<div class="num">
+										<?php
+											
+										?>
+										
+										<sup>o</sup>C</div>
 									<div class="forecast-icon">
 										<img src="images/icons/icon-1.svg" alt="" width=90>
 									</div>	
