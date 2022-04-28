@@ -100,9 +100,6 @@
 										?>
 										
 										<sup>o</sup>C</div>
-									<div class="forecast-icon">
-										<img src="images/icons/icon-1.svg" alt="" width=90>
-									</div>	
 								</div>
 							</div>
 						</div>
