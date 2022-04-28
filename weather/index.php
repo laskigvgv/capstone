@@ -25,13 +25,11 @@
 			$password = "lazar";
 			$dbname = "capston_project";
 
-			$conn = new mysqli($servername, $username, $password, $dbname);
-
-			if ($conn->connect_error) {
-				die("Connection failed: " . $conn->connect_error);
-			}
-			
-			return $conn;
+			$conn = mysqli_connect($servername, $username, $password, $dbname);
+				if(!$conn)
+					return mysqli_connect_error();
+				else
+					return $conn;
 		}
 
 
@@ -82,9 +80,9 @@
 							<div class="day">
 								<?php $conn = get_connection() 
 									$sql = "SELECT time_stamp FROM capston_project ORDER BY id DESC LIMIT 1";
-									$result = $conn->query($sql);
+									$result = $conn->query($sql)->fetch_assoc();
 									
-									echo $result
+									var_dump($result)
 								?>
 							</div>
 								<div class="date">6 Oct</div>
