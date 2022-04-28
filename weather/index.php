@@ -84,9 +84,8 @@
 									$result = $conn->query($sql)->fetch_assoc();
 
 									$dayofweek = date('w', strtotime($result["datum"]);
-									$result1    = date('Y-m-d', strtotime(($day - $dayofweek).' day', strtotime($result["datum"])));
 
-									echo $result1;
+									echo $dayofweek;
 
 								?>
 							</div>
