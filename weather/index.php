@@ -45,7 +45,7 @@
 					<a href="index.html" class="branding">
 						<img src="images/logo.png" alt="" class="logo">
 						<div class="logo-type">
-							<h1 class="site-title"><big>Gostivar Weather	</big></h1>
+							<h1 class="site-title">Gostivar</h1>
 							<small class="site-description">tagline goes here</small>
 						</div>
 					</a>
@@ -67,7 +67,7 @@
 				</div>
 			</div> <!-- .site-header -->
 
-			<div class="hero" data-bg-image="images/city.jpeg">
+			<div class="hero" data-bg-image="images/banner.png">
 
 			</div>
 			
