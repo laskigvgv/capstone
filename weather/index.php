@@ -81,7 +81,8 @@
 								<?php 
 									$conn = get_connection();
 									$sql = "SELECT DAYNAME(DATE(time_stamp)) as datum FROM weather_data;";
-									$result = $conn->query($sql)->fetch_assoc();
+									$sql1 = "SELECT DATE(time_stamp) as datum FROM weather_data;";
+									$result = $conn->query($sql1)->fetch_assoc();
 
 									echo $result["datum"]."	lazar";
 
