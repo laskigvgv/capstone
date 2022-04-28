@@ -78,7 +78,10 @@
 							<div class="forecast-header">
 								
 							<div class="day">day
-								<?php echo "lazar"	;
+								<?php 
+									$conn = get_connection();
+									echo "lazar";
+
 								?>
 							</div>
 								<div class="date">6 Oct</div>
