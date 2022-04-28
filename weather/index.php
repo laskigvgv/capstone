@@ -80,10 +80,10 @@
 							<div class="day">
 								<?php 
 									$conn = get_connection();
-									$sql = "SELECT DAYNAME(DATE(time_stamp)) as datum, temperature as tmp FROM weather_data ORDER BY id DESC;";
+									$sql = "SELECT DAYNAME(DATE(time_stamp)) as week_day, DATE(time_stamp) as datum, temperature as tmp FROM weather_data ORDER BY id DESC;";
 									$result = $conn->query($sql)->fetch_assoc();
 
-									echo $result["datum"];
+									echo $result["week_day"];
 
 								?>
 							</div>
