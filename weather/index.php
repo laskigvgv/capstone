@@ -80,8 +80,8 @@
 							<div class="forecast-header">
 								
 							<div class="day">
-								<?php conn = get_connection() 
-									sql = "SELECT time_stamp FROM capston_project ORDER BY id DESC LIMIT 1";
+								<?php $conn = get_connection() 
+									$sql = "SELECT time_stamp FROM capston_project ORDER BY id DESC LIMIT 1";
 									$result = $conn->query($sql);
 									
 									echo $result
