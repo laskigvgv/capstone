@@ -18,24 +18,7 @@
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
 		<![endif]-->
-	<?php
-		function get_connection(){
-			$servername = "127.0.0.1";
-			$username = "capstone";
-			$password = "lazar";
-			$dbname = "capston_project";
-
-			$conn = new mysqli($servername, $username, $password, $dbname);
-
-			if ($conn->connect_error) {
-				die("Connection failed: " . $conn->connect_error);
-			}
-			
-			return $conn;
-		}
-
-
-	?>
+	
 	</head>
 
 
@@ -80,12 +63,7 @@
 							<div class="forecast-header">
 								
 							<div class="day">
-								<?php $conn = get_connection() 
-									$sql = "SELECT time_stamp FROM capston_project ORDER BY id DESC LIMIT 1";
-									$result = $conn->query($sql);
-									
-									echo $result
-								?>
+								monday
 							</div>
 								<div class="date">6 Oct</div>
 							</div> <!-- .forecast-header -->
