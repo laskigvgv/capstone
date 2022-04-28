@@ -80,7 +80,7 @@
 							<div class="day">
 								<?php 
 									$conn = get_connection();
-									$sql = "SELECT DAYNAME(DATE(time_stamp)) as datum FROM weather_data ORDER BY id DESC;";
+									$sql = "SELECT DAYNAME(DATE(time_stamp)) as datum, temperature as tmp FROM weather_data ORDER BY id DESC;";
 									$result = $conn->query($sql)->fetch_assoc();
 
 									echo $result["datum"];
@@ -89,10 +89,10 @@
 							</div>
 								<div class="date"><?php 
 									// $conn = get_connection();
-									$sql = "SELECT DATE(time_stamp) as datum FROM weather_data ORDER BY id DESC;";
-									$result = $conn->query($sql)->fetch_assoc();
+									// $sql = "SELECT DATE(time_stamp) as datum FROM weather_data ORDER BY id DESC;";
+									// $result = $conn->query($sql)->fetch_assoc();
 
-									echo $result["datum"]; ?>
+									echo $result["tmp"]; ?>
 								</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
