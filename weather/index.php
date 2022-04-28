@@ -67,7 +67,7 @@
 				</div>
 			</div> <!-- .site-header -->
 
-			<div class="hero" data-bg-image="images/city.jpg">
+			<div class="hero" data-bg-image="images/city.jpeg">
 
 			</div>
 			
