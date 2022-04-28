@@ -83,7 +83,7 @@
 									$sql = "SELECT time_stamp FROM weather_data;";
 									$result = $conn->query($sql);
 
-									echo "lazar";
+									echo $result;
 
 								?>
 							</div>
