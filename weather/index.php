@@ -81,9 +81,9 @@
 								<?php 
 									$conn = get_connection();
 									$sql = "SELECT time_stamp FROM weather_data;";
-									$result = $conn->query($sql);
+									$result = $conn->query($sql)->fetch_assoc();
 
-									echo $result;
+									var_dump($result);
 
 								?>
 							</div>
