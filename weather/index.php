@@ -105,7 +105,7 @@
 						</div>
 						<div class="forecast">
 							<div class="forecast-header">
-								<div class="day">Tuesday</div>
+								<div class="day">Humidity</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 								<div class="forecast-icon">
@@ -117,7 +117,7 @@
 						</div>
 						<div class="forecast">
 							<div class="forecast-header">
-								<div class="day">Wednesday</div>
+								<div class="day">Air Pressure</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 								<div class="forecast-icon">
