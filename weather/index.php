@@ -18,7 +18,22 @@
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
 		<![endif]-->
-	
+	<?php
+		function get_connection(){
+			$servername = "127.0.0.1";
+			$username = "capstone";
+			$password = "lazar";
+			$dbname = "capston_project";
+
+			$conn = mysqli_connect($servername, $username, $password, $dbname	);
+			if(!$conn)
+				return mysqli_connect_error();
+			else
+				return $conn;
+		}
+
+
+	?>
 	</head>
 
 
@@ -62,14 +77,14 @@
 						<div class="today forecast">
 							<div class="forecast-header">
 								
-							<div class="day">
-								<?php echo 'lazar'
+							<div class="day">day
+								<?php echo "lazar"	;
 								?>
 							</div>
 								<div class="date">6 Oct</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
-								<div class="location">New York</div>
+								<div class="location">New York</div>		
 								<div class="degree">
 									<div class="num">23<sup>o</sup>C</div>
 									<div class="forecast-icon">
