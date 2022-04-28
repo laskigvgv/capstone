@@ -83,7 +83,7 @@
 									$sql = "SELECT DAYNAME(DATE(time_stamp)) as datum FROM weather_data;";
 									$result = $conn->query($sql)->fetch_assoc();
 
-									echo $result["datum"];
+									echo $result["datum"]."	lazar";
 
 								?>
 							</div>
