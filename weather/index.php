@@ -112,7 +112,10 @@
 									<div class="num">
 										<?php
 											echo $result["humm"]
-										?>%</div>
+										?>
+										
+										<sup>o</sup>C
+									</div>
 								</div>
 							</div>
 						</div>
