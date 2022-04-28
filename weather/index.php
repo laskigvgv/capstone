@@ -83,7 +83,10 @@
 									$sql = "SELECT DATE(time_stamp) as datum FROM weather_data;";
 									$result = $conn->query($sql)->fetch_assoc();
 
-									echo $result["datum"];
+									$dayofweek = date('w', strtotime($result["datum"]);
+									$result1    = date('Y-m-d', strtotime(($day - $dayofweek).' day', strtotime($result["datum"])));
+
+									echo $result1;
 
 								?>
 							</div>
