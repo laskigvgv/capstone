@@ -80,7 +80,7 @@
 							<div class="day">day
 								<?php 
 									$conn = get_connection();
-									$sql = "SELECT DAYNAME(DATE_FORMAT(time_stamp,'%y-%m-%d')) FROM weather_data;";
+									$sql = "SELECT DATE_FORMAT(time_stamp,'%y-%m-%d') FROM weather_data;";
 									$result = $conn->query($sql)->fetch_assoc();
 
 									echo $result["time_stamp"];
