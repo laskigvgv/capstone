@@ -112,7 +112,7 @@
 									<div class="num">
 										<?php
 											echo $result["humm"]
-										?>%	
+										?> %	
 									</div>
 								</div>
 							</div>
@@ -126,7 +126,7 @@
 									<div class="num">
 										<?php
 											echo $result["press"]
-										?>hPa
+										?> hPa
 									</div>
 								</div>
 								
