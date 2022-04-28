@@ -111,10 +111,11 @@
 							<div class="degree">
 									<div class="num">
 										<?php
-											echo $result["thumm"]
+											echo $result["humm"]
 										?>
 										
-										<sup>o</sup>C</div>
+										<sup>o</sup>C
+									</div>
 								</div>
 							</div>
 						</div>
