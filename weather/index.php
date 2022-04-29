@@ -177,7 +177,6 @@
 							</div>
 							<div class="col-md-4">
 								<div class="news">
-									<div class="date">06.10</div>
 									<h3>Geography</h3>
 									<p>Gostivar, at an elevation of 535 meters, is situated on the foothills of one of the Šar Mountains. Near to Gostivar is the village of Vrutok, where the Vardar river begins at an altitude of 683 meters (2,241 ft) from the base of the Šar Mountains. Vardar River extends through Gostivar, cutting it in half, passes through the capital Skopje, goes through the country, enters Greece and finally reaches the Aegean Sea.</p>
 								</div>
