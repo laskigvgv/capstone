@@ -67,7 +67,7 @@
 				</div>
 			</div> <!-- .site-header -->
 
-			<div class="hero" style="background-image:url(images/city.jpeg)">
+			<div class="hero" style="background-image:url('images/city.jpeg')">
 
 			</div>
 			
