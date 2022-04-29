@@ -87,7 +87,7 @@
 
 								?>
 							</div>
-								<div class="date"><?php 
+								<div class="date">Last Measurement Time<?php 
 									echo $result["datum"]; ?>
 								</div>
 							</div> <!-- .forecast-header -->
