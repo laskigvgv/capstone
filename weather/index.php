@@ -100,7 +100,7 @@
 										?>
 										
 										<sup>o</sup>C</div>
-										<div><img src="images/icons/temperature.gif" width="45px" height="45px"></div>
+										<div background-image="images/icons/temperature.gif" width="45px" height="45px"><</div>
 								</div>
 							</div>
 						</div>
