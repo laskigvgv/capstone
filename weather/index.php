@@ -143,7 +143,7 @@
 						<div class="row">
 							<div class="col-md-3 col-sm-6">
 								<div class="live-camera">
-									
+									<div style="width:25%; height:130px;">lazar</div>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
