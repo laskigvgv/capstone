@@ -158,9 +158,7 @@
 							</div>
 							<div class="col-md-3 col-sm-6">
 								<div class="live-camera">
-									<figure class="live-camera-cover"><img src="images/live-camera-4.jpg" alt=""></figure>
-									<h3 class="location">London</h3>
-									<small class="date">8 oct, 8:00AM</small>
+								<div style="width:100%; height:180px;"><img src="images/gostivar_night2.jpeg" width="100%" height="100%"></div>
 								</div>
 							</div>
 						</div>
