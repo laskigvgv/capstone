@@ -143,7 +143,7 @@
 						<div class="row">
 							<div class="col-md-3 col-sm-6">
 								<div class="live-camera">
-									<div style="width:25%; height:130px;"><img src="images/gostivar_winter2.jpeg" width="100%" height="100%"></div>
+									<div style="width:100%; height:180px;"><img src="images/gostivar_winter2.jpeg" width="100%" height="100%"></div>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
