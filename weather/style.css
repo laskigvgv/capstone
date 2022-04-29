@@ -1388,12 +1388,12 @@ form textarea {
 .news {
   padding-left: 100px;
   position: relative; }
-  .news:after {
+  /* .news:after {
     content: " ";
     width: 12px;
     height: 7px;
     background: url(images/arrow.png);
-    display: block; }
+    display: block; } */
   .news .date {
     position: absolute;
     top: 0;
