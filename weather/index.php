@@ -143,7 +143,7 @@
 						<div class="row">
 							<div class="col-md-3 col-sm-6">
 								<div class="live-camera">
-									<figure class="live-camera-cover"><img src="images/gostivar_night1.jpg" alt=""></figure>
+									<div class="live-camera-cover"><img src="images/gostivar_night1.jpg" alt=""></div>
 									<h3 class="location">New York</h3>
 									<small class="date">8 oct, 8:00AM</small>
 								</div>
