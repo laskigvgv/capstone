@@ -99,7 +99,7 @@
 											echo $result["tmp"]
 										?>
 										
-										<sup>o</sup>C</div>
+										<sup>o</sup>C</div><img src="images/icons/temperature.gif">
 								</div>
 							</div>
 						</div>
