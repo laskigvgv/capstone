@@ -68,7 +68,7 @@
 			</div> <!-- .site-header -->
 
 			<div class="hero">
-				<img src="images/city.jpeg" width="1920px" height="352px">
+				<img src="../images/city.jpeg" width="1920px" height="352px">
 			</div>
 			
 			<div class="forecast-table">
