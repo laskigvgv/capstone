@@ -99,7 +99,7 @@
 											echo $result["tmp"]
 										?>
 										
-										<sup>o</sup>C</div><img src="images/icons/temperature.gif" width="45px" height="45px" loop=infinite>
+										<sup>o</sup>C</div><img src="images/icons/temperature.gif" width="45px" height="45px" loop="infinite">
 								</div>
 							</div>
 						</div>
