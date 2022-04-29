@@ -143,7 +143,7 @@
 						<div class="row">
 							<div class="col-md-3 col-sm-6">
 								<div class="live-camera">
-									<figure class="live-camera-cover"><img src="images/live-camera-1.jpg" alt=""></figure>
+								<video id="hlsVideo" width="300" controls="" src="blob:http://www.roads.org.mk/5aa1ead5-e3a2-4f96-aea2-a68b16cd1917"></video>
 									<h3 class="location">New York</h3>
 									<small class="date">8 oct, 8:00AM</small>
 								</div>
