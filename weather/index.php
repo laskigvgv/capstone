@@ -143,7 +143,7 @@
 						<div class="row">
 							<div class="col-md-3 col-sm-6">
 								<div class="live-camera">
-								<video id="hlsVideo" width="300" controls="" src="blob:http://www.roads.org.mk/9133bea4-192c-4ad9-84c0-dd5bd17064fd"></video>
+								<video src="blob:http://www.roads.org.mk/9133bea4-192c-4ad9-84c0-dd5bd17064fd"></video>
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
