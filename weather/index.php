@@ -170,9 +170,12 @@
 						<div class="row">
 							<div class="col-md-4">
 								<div class="news">
-									<div class="date">06.10</div>
-									<h3><a href="#">Doloremque laudantium totam sequi </a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus. Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur maxime nisi amet doloremque.</p>
+									<h3>Economy</h3>
+									<p>Gostivar is a merchant city. From the second half of the 19th century, merchants started moving in and opening stores. There is also a market day, Tuesday. Merchants from Kruševo, Kičevo, Tetovo and Veles were the founders of the Gostivar merchant centre at that time. Today they have become electricians, mechanics workers, and Gostivar is a modern city.
+
+There are 20,000 Expatriate citizens who are a key source of income in the municipality economy. It is calculated that each year between June and August, approximately 500,000 euros are brought into the city when they return.
+
+In May 2015, an automotive company announced that it would open a new plant in Gostivar in the summer of 2015.</p>
 								</div>
 							</div>
 							<div class="col-md-4">
