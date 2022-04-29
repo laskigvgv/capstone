@@ -67,8 +67,8 @@
 				</div>
 			</div> <!-- .site-header -->
 
-			<div class="hero" style="background-image: url(../images/city.jpeg)">
-
+			<div class="hero">
+				<img src="images/city.jpeg">
 			</div>
 			
 			<div class="forecast-table">
