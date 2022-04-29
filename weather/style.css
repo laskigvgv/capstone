@@ -1246,7 +1246,7 @@ form textarea {
         width: 16.6667%;
         float: left; } }
     .forecast-container .forecast.today {
-      width: 420px; }
+      width: 380px; }
       .forecast-container .forecast.today .forecast-header {
         *zoom: 1; }
         .forecast-container .forecast.today .forecast-header:after {
