@@ -189,7 +189,7 @@ In May 2015, an automotive company announced that it would open a new plant in G
 									<h3>Tourism</h3>
 									<p>Leaving Gostivar on the way to Ohrid, the village Vrutok has the gorge of the biggest river in North Macedonia, Vardar, which is 388 km (241 mi) long and flows into the Aegean Sea, at Thessaloniki. Gostivar is one of the biggest settlements in the Polog valley. The Polog valley can be observed from the high lands of Mavrovo and Galičnik.
 
-Approximately 26 km (16 mi) from Gostivar is a ski resort, "Zare Lazarevski", in the Mavrovo National Park. Mavrovo attracts tourists during all seasons, but is more popular in winter when it is all covered with snow. The tourist resort has 1200 beds and over 1000 villas, with hotels, restaurants and shops. The Mavrovo region hosts ski tournaments and other sport recreations. The peaks on the northern part of the Bistra mountain: Rusino Brdo, Sultanica and Sandaktas, host winter sport activities.</p>
+Approximately 26 km (16 mi) from Gostivar is a ski resort, "Zare Lazarevski", in the Mavrovo National Park.</p>
 								</div>
 							</div>
 						</div>
