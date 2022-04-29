@@ -139,7 +139,7 @@
 			<main class="main-content">
 				<div class="fullwidth-block">
 					<div class="container">
-						<h2 class="section-title">Gostivar In Winter</h2>
+						<h2 class="section-title">Gostivar Through The Seasons</h2>
 						<div class="row">
 							<div class="col-md-3 col-sm-6">
 								<div class="live-camera">
