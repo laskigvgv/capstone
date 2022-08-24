@@ -90,7 +90,7 @@
 									$sql = "SELECT * FROM week_forecast ORDER BY ind DESC LIMIT 1;";
 									$result = $conn->query($sql)->fetch_assoc();
 
-									echo json_decode($result);
+									echo json_encode($result);
 
 								?>
 							</div>
