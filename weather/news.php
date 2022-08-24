@@ -118,6 +118,15 @@
 										?><sup>o</sup>C
 										
 								</div>
+
+								<div class="degree">
+									<div >
+										Feels Like: 
+										<?php
+											echo $decoded_result["day_1"]["feels_like_avg"]
+										?><sup>o</sup>C
+										
+								</div>
 							</div>
 						</div>
 						<div class="today forecast">
