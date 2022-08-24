@@ -103,9 +103,9 @@
 								<!-- <div class="location">Gostivar</div>		 -->
 								<div class="degree">
 									<div >
-										Feels Like: 
+										Min. Temperature: 
 										<?php
-											echo $decoded_result["day_1"]["feels_like_avg"]
+											echo $decoded_result["day_1"]["temp_min"]
 										?><sup>o</sup>C
 										
 								</div>
