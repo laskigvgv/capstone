@@ -50,6 +50,10 @@ for i in range(1,8):
 
 querr = """INSERT INTO `week_forecast` (`one_week`)VALUES(%s);"""
 data = json.dumps(dict_from_api)
+try:
+    cursor.execute(querr, data)
+except Exception as err:
+    print(err)
 
 print(type(json.dumps(dict_from_api)))
 
