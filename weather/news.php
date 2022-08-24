@@ -102,7 +102,7 @@
 							<div class="forecast-content">
 								<!-- <div class="location">Gostivar</div>		 -->
 								<div >
-									<div style="font-size: 15;">
+									<div style="font-size: 15px;">
 										Min. Temperature: 
 										<?php
 											echo $decoded_result["day_1"]["temp_min"]
