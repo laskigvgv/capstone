@@ -78,45 +78,6 @@ def get_weather():
         return {'error':error_msg}
 
 
-def get_week_forcast():
-    r = requests.get('https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&units={units}&appid={api_key}'.format(lat = "41.8", lon = "20.9",part = "current,minutely,hourly,alerts",units = "metric" , api_key = "7961c3ee193a546c55da4b309a205441"))
-
-    dict_from_api = {}
-    for i in range(1,8):
-
-        #getting the date from the unix timestamp
-        unix_timestamp = json.loads(r.content)["daily"][i]["dt"]
-        date_from_unix = datetime.datetime.utcfromtimestamp(unix_timestamp).strftime("%Y-%m-%d")
-
-        #getting the min temp
-        temp_min = json.loads(r.content)["daily"][i]["temp"]["min"]
-
-
-        #getting the max temp
-        temp_max = json.loads(r.content)["daily"][i]["temp"]["max"]
-
-        #getting feels like average
-        feels_like_avg = (json.loads(r.content)["daily"][i]["feels_like"]["day"] + json.loads(r.content)["daily"][i]["feels_like"]["night"])/2
-
-        #getting the pressyre 
-        pressure = json.loads(r.content)["daily"][i]["pressure"]
-        
-        #getting the humidity
-        humidity = json.loads(r.content)["daily"][i]["humidity"]
-        
-        dict_from_api["day_"+str(i)] = {
-            "date_from_unix": date_from_unix,
-            "temp_min": "{:.1f}".format(temp_min),
-            "temp_max": "{:.1f}".format(temp_max),
-            "feels_like_avg": "{:.1f}".format(feels_like_avg),
-            "pressure": pressure,
-            "humidity": humidity
-        }
-
-
-    with open("/home/ragnarok/capstone/7days.json","w") as write_to_file:
-        json.dump(dict_from_api, write_to_file, indent=4)
-
 def get_connection():
     try:
         conn = mariadb.connect(
