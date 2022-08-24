@@ -90,7 +90,7 @@
 									$sql = "SELECT one_week FROM week_forecast ORDER BY ind DESC LIMIT 1;";
 									$result = $conn->query($sql)->fetch_assoc();
 
-									print_r($result["one_week"]["date_from_unix"]);
+									print_r($result);
 
 								?>
 							</div>
