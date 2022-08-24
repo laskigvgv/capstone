@@ -49,7 +49,7 @@ for i in range(1,8):
     }
 
     querr = """INSERT INTO `week_forecast` (`one_week`)VALUES(%s);"""
-    data = (str(dict_from_api))
+    data = (json.dumps(dict_from_api))
 
     pprint("USPESNO VNESEN ZAPIS")
 
