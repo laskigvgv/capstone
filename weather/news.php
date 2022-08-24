@@ -72,7 +72,7 @@
 			<main class="main-content">
 				<div class="container" style="margin-bottom: 10px;">
 					<div class="breadcrumb">
-						<a href="index.html">Home</a>
+						<a href="index.php">Home</a>
 						<span>7 Day Forecast</span>
 					</div>
 				</div>
