@@ -102,7 +102,7 @@
 							<div class="forecast-content">
 								<!-- <div class="location">Gostivar</div>		 -->
 								<div class="degree">
-									<div class="num">
+									<div >
 										<?php
 											echo $decoded_result["day_1"]["feels_like_avg"]
 										?>
