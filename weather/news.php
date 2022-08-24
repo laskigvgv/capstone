@@ -119,7 +119,7 @@
 										
 								</div>
 
-								<div class="degree">
+								<div >
 									<div >
 										Feels Like: 
 										<?php
