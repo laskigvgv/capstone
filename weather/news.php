@@ -103,10 +103,10 @@
 								<!-- <div class="location">Gostivar</div>		 -->
 								<div class="degree">
 									<div >
-										Feels Like
+										Feels Like: 
 										<?php
 											echo $decoded_result["day_1"]["feels_like_avg"]
-										?>
+										?><sup>o</sup>C
 										
 								</div>
 							</div>
