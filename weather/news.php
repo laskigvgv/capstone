@@ -89,7 +89,7 @@
 									$conn = get_connection();
 									$sql = "SELECT one_week FROM week_forecast ORDER BY ind DESC LIMIT 1;";
 									$result = $conn->query($sql)->fetch_assoc();
-									
+									%decoded_result = json_decode(%result["one_week"])
 									print_r(json_decode($result["one_week"]));
 
 								?>
