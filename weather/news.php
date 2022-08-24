@@ -91,7 +91,7 @@
 									$result = $conn->query($sql)->fetch_assoc();
 									$decoded_result = json_decode($result["one_week"],true);
 									$day_in_week = date("l", strtotime($decoded_result["day_1"]["date_from_unix"]));
-									echo gettype($decoded_result["day_1"]["date_from_unix"]);
+									echo date('l', strtotime($decoded_result["day_1"]["date_from_unix"]));
 
 								?>
 							</div>
