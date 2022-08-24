@@ -56,8 +56,8 @@
 					<div class="main-navigation">
 						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
 						<ul class="menu">
-							<li class="menu-item"><a href="index.html">Home</a></li>
-							<li class="menu-item current-menu-item"><a href="news.html">News</a></li>
+							<li class="menu-item"><a href="index.php">Home</a></li>
+							<li class="menu-item current-menu-item"><a href="news.php">7 Day Forecast</a></li>
 							<li class="menu-item"><a href="live-cameras.html">Live cameras</a></li>
 							<li class="menu-item"><a href="photos.html">Photos</a></li>
 							<li class="menu-item"><a href="contact.html">Contact</a></li>
@@ -73,7 +73,7 @@
 				<div class="container">
 					<div class="breadcrumb">
 						<a href="index.html">Home</a>
-						<span>News</span>
+						<span>7 Day Forecast</span>
 					</div>
 				</div>
 				
