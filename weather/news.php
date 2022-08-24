@@ -88,14 +88,14 @@
 								<?php 
 									$conn = get_connection();
 									$sql = "SELECT * FROM week_forecast ORDER BY ind DESC LIMIT 1;";
-									$result = $conn->query($sql)->fetch_assoc();
+									$result = json_encode($conn->query($sql)->fetch_assoc());
 
 									echo $result;
 
 								?>
 							</div>
 								<div class="date">Last Measurement Time:	<?php 
-									echo gettype($result); ?>
+									echo $result; ?>
 								</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
