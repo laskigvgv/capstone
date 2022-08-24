@@ -51,7 +51,7 @@ for i in range(1,8):
     querr = """INSERT INTO `week_forecast` (`one_week`)VALUES(%s);"""
     data = (dict_from_api)
 
-pprint("USPESNO VNESEN ZAPIS")
+    pprint("USPESNO VNESEN ZAPIS")
 
     
 
