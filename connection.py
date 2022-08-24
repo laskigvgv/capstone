@@ -54,7 +54,7 @@ data = json.dumps(dict_from_api)
 cursor.execute(querr, (data,))
 # except Exception as err:
 #     print(err)
-conn.commit()
+cursor.commit()
 
 print(type(json.dumps(dict_from_api)))
 
