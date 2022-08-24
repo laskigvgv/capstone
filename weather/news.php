@@ -70,7 +70,7 @@
 			</div> <!-- .site-header -->
 
 			<main class="main-content">
-				<div class="container">
+				<div class="container" style="margin-bottom: 10px;">
 					<div class="breadcrumb">
 						<a href="index.html">Home</a>
 						<span>7 Day Forecast</span>
