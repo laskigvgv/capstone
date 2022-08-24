@@ -114,5 +114,5 @@ def get_week_forcast():
         }
 
 
-    with open("/Users/lazar_zdravkoski/Desktop/jsoni/7days.json","w") as write_to_file:
+    with open("/home/ragnarok/capstone/7days.json","w") as write_to_file:
         json.dump(dict_from_api, write_to_file, indent=4)
