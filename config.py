@@ -116,3 +116,23 @@ def get_week_forcast():
 
     with open("/home/ragnarok/capstone/7days.json","w") as write_to_file:
         json.dump(dict_from_api, write_to_file, indent=4)
+
+def get_connection():
+    try:
+        conn = mariadb.connect(
+            user="capstone",
+            password="lazar",
+            host="127.0.0.1",
+            port=3306,
+            database="capston_project"
+
+    )
+        print("zemena konekcija")
+    except mariadb.Error as e:
+        print(f"Error connecting to MariaDB Platform: {e}")
+        sys.exit(1)
+
+    # Get Cursor
+    cur = conn.cursor()
+
+    return cur
