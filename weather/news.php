@@ -88,9 +88,9 @@
 								<?php 
 									$conn = get_connection();
 									$sql = "SELECT * FROM week_forecast ORDER BY ind DESC LIMIT 1;";
-									$result = json_encode($conn->query($sql)->fetch_assoc());
+									$result = $conn->query($sql)->fetch_assoc();
 
-									echo $result;
+									echo ;
 
 								?>
 							</div>
@@ -103,7 +103,7 @@
 								<div class="degree">
 									<div class="num">
 										<?php
-											echo $result["tmp"]
+											echo $result["tmp"];
 										?>
 										
 										<sup>o</sup>C<img src="images/icons/temperature.gif" width="45px" height="45px" loop="infinite"></div>
@@ -118,7 +118,7 @@
 							<div class="degree">
 									<div class="num">
 										<?php
-											echo $result["humm"]
+											echo $result["humm"];
 										?> %	
 									</div>
 								</div>
