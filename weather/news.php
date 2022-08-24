@@ -104,7 +104,7 @@
 								<div class="degree">
 									<div class="num">
 										<?php
-											echo $result["tmp"]
+											echo $decoded_result["day_1"]["feels_like_avg"]
 										?>
 										
 										<sup>o</sup>C<img src="images/icons/temperature.gif" width="45px" height="45px" loop="infinite"></div>
