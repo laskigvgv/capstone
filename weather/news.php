@@ -90,12 +90,12 @@
 									$sql = "SELECT * FROM week_forecast ORDER BY ind DESC LIMIT 1;";
 									$result = $conn->query($sql)->fetch_assoc();
 
-									echo $result["week_day"];
+									echo $result;
 
 								?>
 							</div>
 								<div class="date">Last Measurement Time:	<?php 
-									echo $result["day_1"][date_from_unix]; ?>
+									echo $result; ?>
 								</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
