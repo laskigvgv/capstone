@@ -90,12 +90,12 @@
 									$sql = "SELECT * FROM week_forecast ORDER BY ind DESC LIMIT 1;";
 									$result = $conn->query($sql)->fetch_assoc();
 
-									echo ;
+									echo $result;
 
 								?>
 							</div>
 								<div class="date">Last Measurement Time:	<?php 
-									echo $result; ?>
+									echo gettype($result); ?>
 								</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
@@ -103,7 +103,7 @@
 								<div class="degree">
 									<div class="num">
 										<?php
-											echo $result["tmp"];
+											echo $result["tmp"]
 										?>
 										
 										<sup>o</sup>C<img src="images/icons/temperature.gif" width="45px" height="45px" loop="infinite"></div>
@@ -118,7 +118,7 @@
 							<div class="degree">
 									<div class="num">
 										<?php
-											echo $result["humm"];
+											echo $result["humm"]
 										?> %	
 									</div>
 								</div>
