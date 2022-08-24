@@ -126,32 +126,7 @@
 					</div>
 				</div>
 
-				<div class="fullwidth-block" data-bg-color="#262936">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="news">
-									<h3>Economy</h3>
-									<p>Gostivar is a merchant city. From the second half of the 19th century, merchants started moving in and opening stores. There is also a market day, Tuesday. Merchants from Kruševo, Kičevo, Tetovo and Veles were the founders of the Gostivar merchant centre at that time. Today they have become electricians, mechanics workers, and Gostivar is a modern city.</p>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="news">
-									<h3>Geography</h3>
-									<p>Gostivar, at an elevation of 535 meters, is situated on the foothills of one of the Šar Mountains. Near to Gostivar is the village of Vrutok, where the Vardar river begins at an altitude of 683 meters (2,241 ft) from the base of the Šar Mountains. Vardar River extends through Gostivar, cutting it in half, passes through the capital Skopje, goes through the country, enters Greece and finally reaches the Aegean Sea.</p>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="news">
-									<h3>Tourism</h3>
-									<p>Leaving Gostivar on the way to Ohrid, the village Vrutok has the gorge of the biggest river in North Macedonia, Vardar, which is 388 km (241 mi) long and flows into the Aegean Sea, at Thessaloniki. Gostivar is one of the biggest settlements in the Polog valley. The Polog valley can be observed from the high lands of Mavrovo and Galičnik.
-
-Approximately 26 km (16 mi) from Gostivar is a ski resort, "Zare Lazarevski", in the Mavrovo National Park.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 			</main> <!-- .main-content -->
 
 			<footer class="site-footer">
