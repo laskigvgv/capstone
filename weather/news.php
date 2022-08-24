@@ -87,7 +87,7 @@
 							<div class="day">
 								<?php 
 									$conn = get_connection();
-									$sql = "SELECT DAYNAME(DATE(time_stamp)) as week_day, TIME(time_stamp) as datum, temperature as tmp, humidity as humm, pressure as press FROM weather_data ORDER BY id DESC;";
+									$sql = "SELECT * FROM week_forecast ORDER BY ind DESC LIMIT 1;";
 									$result = $conn->query($sql)->fetch_assoc();
 
 									echo $result["week_day"];
@@ -95,7 +95,7 @@
 								?>
 							</div>
 								<div class="date">Last Measurement Time:	<?php 
-									echo $result["datum"]; ?>
+									echo $result["day_1"][date_from_unix]; ?>
 								</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
