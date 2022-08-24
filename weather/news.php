@@ -90,8 +90,8 @@
 									$sql = "SELECT one_week FROM week_forecast ORDER BY ind DESC LIMIT 1;";
 									$result = $conn->query($sql)->fetch_assoc();
 									$decoded_result = json_decode($result["one_week"],true);
-									$day_in_week = date("1", strtotime($decoded_result["day_1"]["date_from_unix"]));
-									echo $decoded_result["day_1"]["date_from_unix"];
+									$day_in_week = date("l", strtotime($decoded_result["day_1"]["date_from_unix"]));
+									echo $day_of_week;
 
 								?>
 							</div>
