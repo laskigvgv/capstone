@@ -95,7 +95,7 @@
 								?>
 							</div>
 								<div class="date">Last Measurement Time:	<?php 
-									echo gettype($result); ?>
+									echo $result; ?>
 								</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
