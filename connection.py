@@ -56,7 +56,7 @@ try:
 except Exception as err:
     print(err)
 
-print(type(json.dumps(dict_from_api)))
+print(type(data))
 
     
 
