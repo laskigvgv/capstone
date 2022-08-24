@@ -135,4 +135,4 @@ def get_connection():
     # Get Cursor
     cur = conn.cursor()
 
-    return cur
+    return cur, conn
