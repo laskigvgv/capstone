@@ -101,7 +101,7 @@
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 								<!-- <div class="location">Gostivar</div>		 -->
-								<div >
+								<div style="font-size: 15;">
 									<div >
 										Min. Temperature: 
 										<?php
