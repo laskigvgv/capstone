@@ -48,10 +48,10 @@ for i in range(1,8):
         "humidity": humidity
     }
 
-    querr = """INSERT INTO `week_forecast` (`one_week`)VALUES(%s);"""
-    data = (json.dumps(dict_from_api))
+querr = """INSERT INTO `week_forecast` (`one_week`)VALUES(%s);"""
+data = (json.dumps(dict_from_api))
 
-    pprint("USPESNO VNESEN ZAPIS")
+pprint("USPESNO VNESEN ZAPIS")
 
     
 
