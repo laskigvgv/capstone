@@ -6,6 +6,8 @@ from pprint import pprint
 import json
 import datetime
 
+from config import get_connection
+
 
 # root@localhost:3306
 # jdbc:mysql://localhost:3306/?user=root
@@ -13,6 +15,8 @@ import datetime
 r = requests.get('https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&units={units}&appid={api_key}'.format(lat = "41.8", lon = "20.9",part = "current,minutely,hourly,alerts",units = "metric" , api_key = "7961c3ee193a546c55da4b309a205441"))
 # print(type(r.content.decode('utf-8')))
 dict_from_api = {}
+
+cursor = get_connection()
 
 for i in range(1,8):
     #getting the date from the unix timestamp
@@ -43,7 +47,11 @@ for i in range(1,8):
         "pressure": pressure,
         "humidity": humidity
     }
-print(dict_from_api)
+
+    querr = """INSERT INTO `week_forecast` (`one_week`)VALUES(%s);"""
+    data = (dict_from_api)
+
+pprint("USPESNO VNESEN ZAPIS")
 
     
 
