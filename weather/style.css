@@ -1512,12 +1512,12 @@ form textarea {
     color: #009ad8; }
 
 .photo {
-  position: relative;
+  position: center;
   padding-left: 50%;
   min-height: 190px;
   border-radius: 10px;
   overflow: hidden;
-  background: #262936;
+  background: transparent;
   margin-bottom: 30px; }
   .photo .photo-preview {
     position: absolute;
