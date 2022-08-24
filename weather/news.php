@@ -109,11 +109,12 @@
 										?><sup>o</sup>C
 										
 								</div>
+
 								<div class="degree">
 									<div >
-										Max. Temperature: 
+										Min. Temperature: 
 										<?php
-											echo $decoded_result["day_1"]["temp_max"]
+											echo $decoded_result["day_1"]["temp_min"]
 										?><sup>o</sup>C
 										
 								</div>
