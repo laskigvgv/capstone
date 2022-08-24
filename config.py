@@ -16,22 +16,8 @@ def get_weather():
     sense = SenseHat()
     sense.clear()
     sense.rotation = 90
-
-    try:
-        conn = mariadb.connect(
-            user="capstone",
-            password="lazar",
-            host="127.0.0.1",
-            port=3306,
-            database="capston_project"
-
-    )
-        print("zemena konekcija")
-    except mariadb.Error as e:
-        print(f"Error connecting to MariaDB Platform: {e}")
-        sys.exit(1)
-
-    # Get Cursor
+    
+    conn = get_connection()
     cur = conn.cursor()
 
 
@@ -58,9 +44,11 @@ def get_weather():
         data = (temp, humidity, pressure)
         try:
             cur.execute(querr, data)
+            cur.close()
         except Exception as err:
             print(err)
         conn.commit()
+        conn.close()
         print("zapisana data")
         red = (255 , 0 , 0)
         green = (0 , 255 , 0)
@@ -96,4 +84,4 @@ def get_connection():
     # Get Cursor
     cur = conn.cursor()
 
-    return cur, conn
+    return conn

@@ -9,14 +9,12 @@ import datetime
 from config import get_connection
 
 
-# root@localhost:3306
-# jdbc:mysql://localhost:3306/?user=root
-
 r = requests.get('https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&units={units}&appid={api_key}'.format(lat = "41.8", lon = "20.9",part = "current,minutely,hourly,alerts",units = "metric" , api_key = "7961c3ee193a546c55da4b309a205441"))
-# print(type(r.content.decode('utf-8')))
+
 dict_from_api = {}
 
-cursor, conn= get_connection()
+conn= get_connection()
+cursor = conn.cursor()
 
 for i in range(1,8):
     #getting the date from the unix timestamp
@@ -56,18 +54,7 @@ try:
     cursor.close()
 except Exception as err:
     print(err)
+
 conn.commit()
 conn.close()
-print(type(json.dumps(dict_from_api)))
-
-    
-
-# print(date_from_unix)
-
-# try:
-#     engine = sql.create_engine("mysql+pymysql://{username}:{passw}@192.168.100.0:3306/".format(username = "root", passw ="L.z3008994473001"))
-#     engine.connect()
-#     print("zemena konekcija")
-# except:
-#     print("nemoze")
 
