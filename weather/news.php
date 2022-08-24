@@ -109,6 +109,14 @@
 										?><sup>o</sup>C
 										
 								</div>
+								<div class="degree">
+									<div >
+										Max. Temperature: 
+										<?php
+											echo $decoded_result["day_1"]["temp_max"]
+										?><sup>o</sup>C
+										
+								</div>
 							</div>
 						</div>
 						<div class="today forecast">
