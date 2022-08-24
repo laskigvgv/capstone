@@ -16,7 +16,7 @@ r = requests.get('https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon=
 # print(type(r.content.decode('utf-8')))
 dict_from_api = {}
 
-cursor = get_connection()
+cursor, conn= get_connection()
 
 for i in range(1,8):
     #getting the date from the unix timestamp
@@ -54,7 +54,7 @@ data = json.dumps(dict_from_api)
 cursor.execute(querr, (data,))
 # except Exception as err:
 #     print(err)
-cursor.commit()
+conn.commit()
 
 print(type(json.dumps(dict_from_api)))
 
