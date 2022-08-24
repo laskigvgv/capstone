@@ -50,7 +50,7 @@ for i in range(1,8):
 
 # querr = """INSERT INTO `week_forecast` (`one_week`)VALUES(%s);"""
 data = json.dumps(dict_from_api)
-querr = """INSERT INTO `week_forecast` (`one_week`)VALUES(data);"""
+querr = """INSERT INTO `week_forecast` (`one_week`)VALUES({});""".format(data)
 try:
     cursor.execute(querr)
 except Exception as err:
