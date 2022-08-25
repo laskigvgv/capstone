@@ -105,6 +105,8 @@
 											
 										}
 
+										else{echo "something is not right"}
+
 										
 									?>
 								</div>
