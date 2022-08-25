@@ -80,15 +80,37 @@
 						<div class="col-md-6 col-md-offset-1">
 							<h2 class="section-title">Contact us</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
-							<form action="#" class="contact-form">
+							<form action="#" method="POST" class="contact-form">
 								<div class="row">
-									<div class="col-md-6"><input type="text" placeholder="Your name..."></div>
-									<div class="col-md-6"><input type="text" placeholder="Email Addresss..."></div>
+									<div class="col-md-6"><input name="first_name" type="text" placeholder="Your name..."></div>
+									<div class="col-md-6"><input name="email" type="text" placeholder="Email Addresss..."></div>
 								</div>
 								
 								<textarea name="" placeholder="Message..."></textarea>
 								<div class="text-right">
 									<input type="submit" placeholder="Send message">
+									<?php
+										
+										if (isset($_POST["first_name"]) && isset($_POST["email"])){
+											if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
+												$first_name = $_POST["first_name"];
+												$email = $_POST["email"];
+												$email_body = $_POST["email_body"];
+												$to = "zdravkoski.lazar@gmail.com";
+												echo "pred komanda";
+												$command = escapeshellcmd("python3 /var/www/html/capstone/send_mail.py " . $first_name) . " " . $email . " " . $email_body;
+												$output = shell_exec($command);
+												echo "posle exec";
+												echo $output;
+											}
+											else{
+												echo "invalid email address format";
+											}
+											
+										}
+
+										
+									?>
 								</div>
 							</form>
 
