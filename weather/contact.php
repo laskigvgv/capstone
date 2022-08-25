@@ -97,10 +97,10 @@
 												$email_body = $_POST["email_body"];
 												$to = "zdravkoski.lazar@gmail.com";
 												echo "pred komanda";
-												$command = escapeshellcmd('python3 /var/www/html/capstone/send_mail.py $first_name, $email, $email_body');
-												$output = shell_exec($command);
+												$command = passthru('python3 /var/www/html/capstone/send_mail.py $first_name $email $email_body');
+												<!-- $output = shell_exec($command); -->
 												echo "posle exec";
-												echo $output;
+												echo $command;
 											}
 											else{
 												echo "invalid email address format";
