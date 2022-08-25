@@ -1513,11 +1513,12 @@ form textarea {
 
 .photo {
   position: relative;
-  padding-left: 50%;
+  padding-left: 100%;
+  padding-right: 100%;
   min-height: 190px;
   border-radius: 10px;
   overflow: hidden;
-  background: ;
+  background: transparent;
   margin-bottom: 30px; }
   .photo .photo-preview {
     position: absolute;
