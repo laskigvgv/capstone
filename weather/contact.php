@@ -85,10 +85,7 @@
 									<div class="col-md-6"><input type="text" placeholder="Your name..."></div>
 									<div class="col-md-6"><input type="text" placeholder="Email Addresss..."></div>
 								</div>
-								<div class="row">
-									<div class="col-md-6"><input type="text" placeholder="Company name..."></div>
-									<div class="col-md-6"><input type="text" placeholder="Website..."></div>
-								</div>
+								
 								<textarea name="" placeholder="Message..."></textarea>
 								<div class="text-right">
 									<input type="submit" placeholder="Send message">
