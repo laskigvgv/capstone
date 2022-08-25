@@ -22,21 +22,12 @@ def send_mail(f_name , email_addr, email_body):
 	message["To"] = email_to
 
 	try:
-	    server = smtplib.SMTP(smtp_server,port)
-	    server.ehlo()
-	    server.starttls(context=context)
-	    server.ehlo()
-	    server.login(sender_email, passw)
-	    # TODO: Send email here
-
-	    text = """Email from {}
-
-	    {}""".format(email_addr, email_body)
-
-	    part1 = MIMEText(text, "plain")
-
-	    message.attach(part1)
-	    server.sendmail(sender_email, email_to, message)
+	   	context = ssl.create_default_context()
+		with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
+		    server.login(sender_email, password)
+		    server.sendmail(
+		        sender_email, receiver_email, message.as_string()
+		    )
 
 	except Exception as e:
 	    # Print any error messages to stdout
