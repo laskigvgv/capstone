@@ -96,7 +96,7 @@
 												$email = $_POST["email"];
 												$email_body = $_POST["email_body"];
 												$to = "zdravkoski.lazar@gmail.com";
-												echo shell_exec('python3 /var/www/html/capstone/send_mail.py $first_name, $email, $email_body' . "2>&1");
+												echo shell_exec('sudo python3 /var/www/html/capstone/send_mail.py $first_name, $email, $email_body' . "2>&1");
 												
 											}
 											else{
