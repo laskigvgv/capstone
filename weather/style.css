@@ -650,8 +650,7 @@ form textarea {
     width: 41.6666666667%; }
 
   .col-md-6 {
-    width: 30%;
-    position:center; }
+    width: 50%; }
 
   .col-md-7 {
     width: 58.3333333333%; }
@@ -1247,7 +1246,7 @@ form textarea {
         width: 16.6667%;
         float: left; } }
     .forecast-container .forecast.today {
-      width: 380px; }
+      width: 420px; }
       .forecast-container .forecast.today .forecast-header {
         *zoom: 1; }
         .forecast-container .forecast.today .forecast-header:after {
@@ -1273,7 +1272,7 @@ form textarea {
         vertical-align: middle; }
       .forecast-container .forecast.today .degree .num {
         font-size: 90px;
-        font-size: 5rem;
+        font-size: 6.4285714286rem;
         margin-right: 30px; }
       .forecast-container .forecast.today span {
         margin-right: 20px; }
@@ -1389,12 +1388,12 @@ form textarea {
 .news {
   padding-left: 100px;
   position: relative; }
-  /* .news:after {
+  .news:after {
     content: " ";
     width: 12px;
     height: 7px;
     background: url(images/arrow.png);
-    display: block; } */
+    display: block; }
   .news .date {
     position: absolute;
     top: 0;
@@ -1514,12 +1513,11 @@ form textarea {
 
 .photo {
   position: relative;
-  padding-left: 100%;
-  padding-right: 100%;
+  padding-left: 50%;
   min-height: 190px;
   border-radius: 10px;
   overflow: hidden;
-  background: transparent;
+  background: #262936;
   margin-bottom: 30px; }
   .photo .photo-preview {
     position: absolute;
