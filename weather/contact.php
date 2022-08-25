@@ -82,7 +82,7 @@
 							<form action="" method="POST" class="contact-form">
 								<div class="row">
 									<div class="col-md-6"><input name="first_name" type="text" placeholder="Your name..."></div>
-									<div class="col-md-6"><input type="text" placeholder="Email Addresss..."></div>
+									<div class="col-md-6"><input name="email" type="text" placeholder="Email Addresss..."></div>
 								</div>
 								<div class="row">
 									<div class="col-md-6"><input type="text" placeholder="Company name..."></div>
@@ -91,7 +91,7 @@
 								<textarea name="" placeholder="Message..."></textarea>
 								<div class="text-right">
 									<input type="submit" placeholder="Send message">
-									<?php echo print_r($_POST);
+									<?php echo print_r($_POST["first_name"]);
 										$first_name = $_POST["first_name"]
 									?>
 								</div>
