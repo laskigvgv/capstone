@@ -96,11 +96,11 @@
 											if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
 												echo "Some or all fields are empty";
 												$to = "zdravkoski.lazar@gmail.com";
-												
+
 												print_r($_POST);
 											}
 											else{
-												echo "invalid email address format"
+												echo "invalid email address format";
 											}
 											
 										}
