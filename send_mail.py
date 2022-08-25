@@ -10,7 +10,7 @@ def send_mail(f_name , email_addr, email_body):
 	sender_email = "zdr.lazar.salesrocks@gmail.com"
 	passw = "audrdgvpsbkyrqjl"
 
-	email_to = "ivana.andrijevic@yahoo.com"
+	email_to = "zdravkoski.lazar@gmail.com"
 
 	context = ssl.create_default_context()
 
@@ -24,8 +24,6 @@ def send_mail(f_name , email_addr, email_body):
 
 	    email_message = """
 	    Email Message From {email_addr}
-
-	    LALA LALA LALA
 
 	    {email_body}""".format(email_addr = email_addr, email_body = email_body)
 
