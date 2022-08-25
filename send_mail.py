@@ -27,7 +27,7 @@ def send_mail(f_name , email_addr, email_body):
 
 	    {email_body}""".format(email_addr = email_addr, email_body = email_body)
 
-	    server.sendmail(sender_email, receiver_email, message)
+	    server.sendmail(sender_email, email_to, message)
 
 	except Exception as e:
 	    # Print any error messages to stdout
