@@ -2,12 +2,9 @@ import smtplib, ssl
 import json
 import sys
 
-prom = sys.argv[1]
+f_name , email_addr, email_body= sys.argv[1], sys.argv[2], sys.argv[3]
 
-# print("DA DA DA")
-# print(prom)
-
-def send_mail(f_name):
+def send_mail(f_name , email_addr, email_body):
 	print(f_name)
 
-send_mail(prom)
+send_mail(f_name , email_addr, email_body)
