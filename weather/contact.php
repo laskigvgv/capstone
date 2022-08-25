@@ -91,8 +91,11 @@
 								<textarea name="" placeholder="Message..."></textarea>
 								<div class="text-right">
 									<input type="submit" placeholder="Send message">
-									<?php echo print_r($_POST["first_name"]);
-										$first_name = $_POST["first_name"]
+									<?php
+										$first_name = $_POST["first_name"];
+										$email = $_POST["email"]
+
+										echo print_r($_POST);
 									?>
 								</div>
 							</form>
