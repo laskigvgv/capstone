@@ -93,7 +93,7 @@
 									<input type="submit" placeholder="Send message">
 									<?php
 										$first_name = $_POST["first_name"];
-										$email = $_POST["email"]
+										$email = $_POST["email"];
 
 										echo print_r($_POST);
 									?>
