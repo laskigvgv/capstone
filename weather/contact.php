@@ -91,16 +91,12 @@
 										
 
 										if (isset($_POST["first_name"]) && isset($_POST["email"])){
-											echo "VLAGA VO PRV IF";
 											if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
-												echo "VLAGA VO VTOR IF";
 												$first_name = $_POST["first_name"];
 												$email = $_POST["email"];
 												$email_body = $_POST["email_body"];
 												$to = "zdravkoski.lazar@gmail.com";
-												echo "USPESNO";
 												$py_response = shell_exec('python3 /var/www/html/capstone/send_mail.py $first_name, $email, $email_body');
-												echo "POSLE EGZEKUCIJA NA KOMANDA";
 												echo json.decode($py_response);
 											}
 											else{
