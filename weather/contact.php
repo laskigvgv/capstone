@@ -96,7 +96,7 @@
 											if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
 												$to = "zdravkoski.lazar@gmail.com";
 												$py_response = shell_exec('python3 /var/www/html/capstone/send_mail.py' . escapeshellarg($first_name, $email, $email_body) . " 2>&1");
-												echo $py_response;
+												print_r($py_response);
 												print_r($_POST);
 											}
 											else{
