@@ -99,6 +99,7 @@
 												$to = "zdravkoski.lazar@gmail.com";
 												$command = escapeshellcmd("python3 /var/www/html/capstone/send_mail.py " . $first_name) . " " . $email . " " . $email_body;
 												$output = shell_exec($command);
+												echo $output
 											}
 											else{
 												echo "invalid email address format";
