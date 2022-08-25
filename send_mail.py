@@ -24,10 +24,11 @@ def send_mail(f_name , email_addr, email_body):
 
 	    email_message = """
 	    Subject: Contact Form
-	    
+
 	    Email Message From {email_addr}
 
-	    {email_body}""".format(email_addr = email_addr, email_body = email_body)
+	    {email_body}
+	    """.format(email_addr = email_addr, email_body = email_body)
 
 	    server.sendmail(sender_email, email_to, email_message)
 
