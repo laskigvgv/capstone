@@ -2,7 +2,8 @@ import smtplib, ssl
 import json
 import sys
 
-f_name , email_addr, email_body= sys.argv[1], sys.argv[2], sys.argv[3]
+f_name , email_addr= sys.argv[1], sys.argv[2]
+email_body = "{}".format(sys.argv[3])
 print(sys.argv[3])
 # def send_mail(f_name , email_addr, email_body):
 # 	print("EMAIL BODY NA POCETOK NA FUNKCIJA	", email_body)
