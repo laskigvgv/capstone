@@ -88,12 +88,13 @@
 								<div class="text-right">
 									<input type="submit" placeholder="Send message">
 									<?php
-										$first_name = $_POST["first_name"];
-										$email = $_POST["email"];
-										$email_body = $_POST["email_body"];
+										
 
 										if (isset($_POST["first_name"]) && isset($_POST["email"])){
 											if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
+												$first_name = $_POST["first_name"];
+												$email = $_POST["email"];
+												$email_body = $_POST["email_body"];
 												$to = "zdravkoski.lazar@gmail.com";
 												$py_response = shell_exec('python3 /var/www/html/capstone/send_mail.py' . escapeshellarg($first_name, $email, $email_body) . " 2>&1");
 												echo $py_response;
