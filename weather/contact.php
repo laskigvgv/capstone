@@ -39,8 +39,9 @@
 					<div class="main-navigation">
 						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
 						<ul class="menu">
-							<li class="menu-item"><a href="index.php">Home</a></li>
-							<li class="menu-item"><a href="news.php">News</a></li>
+							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="news.html">News</a></li>
+							<li class="menu-item"><a href="live-cameras.html">Live cameras</a></li>
 							<li class="menu-item"><a href="photos.html">Photos</a></li>
 							<li class="menu-item current-menu-item"><a href="contact.html">Contact</a></li>
 						</ul> <!-- .menu -->
@@ -79,37 +80,18 @@
 						<div class="col-md-6 col-md-offset-1">
 							<h2 class="section-title">Contact us</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
-							<form action="" method="POST" class="contact-form">
+							<form action="#" class="contact-form">
 								<div class="row">
-									<div class="col-md-6"><input name="first_name" type="text" placeholder="Your name..."></div>
-									<div class="col-md-6"><input name="email" type="text" placeholder="Email Addresss..."></div>
+									<div class="col-md-6"><input type="text" placeholder="Your name..."></div>
+									<div class="col-md-6"><input type="text" placeholder="Email Addresss..."></div>
 								</div>
-								<textarea name="email_body" placeholder="Message..."></textarea>
+								<div class="row">
+									<div class="col-md-6"><input type="text" placeholder="Company name..."></div>
+									<div class="col-md-6"><input type="text" placeholder="Website..."></div>
+								</div>
+								<textarea name="" placeholder="Message..."></textarea>
 								<div class="text-right">
 									<input type="submit" placeholder="Send message">
-									<?php
-										
-
-										if (isset($_POST["first_name"]) && isset($_POST["email"])){
-											if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
-												$first_name = $_POST["first_name"];
-												$email = $_POST["email"];
-												$email_body = $_POST["email_body"];
-												$to = "zdravkoski.lazar@gmail.com";
-												echo "pred komanda";
-												$command = escapeshellcmd("python3 /var/www/html/capstone/send_mail.py " . $first_name) . " " . $email . " " . $email_body;
-												$output = shell_exec($command);
-												echo "posle exec";
-												echo $output;
-											}
-											else{
-												echo "invalid email address format";
-											}
-											
-										}
-
-										
-									?>
 								</div>
 							</form>
 
