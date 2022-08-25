@@ -86,7 +86,7 @@
 									<div class="col-md-6"><input name="email" type="text" placeholder="Email Addresss..."></div>
 								</div>
 								
-								<textarea name="" placeholder="Message..."></textarea>
+								<textarea name="email_body" placeholder="Message..."></textarea>
 								<div class="text-right">
 									<input type="submit" placeholder="Send message">
 									<?php
