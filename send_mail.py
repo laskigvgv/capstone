@@ -5,3 +5,4 @@ import sys
 f_name = sys.argw[1]
 
 print("DA DA DA")
+print(f_name)
