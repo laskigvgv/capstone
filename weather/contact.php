@@ -100,7 +100,7 @@
 												$command = escapeshellcmd('python3 /var/www/html/capstone/send_mail.py');
 												$output = shell_exec($command);
 												echo "posle exec";
-												echo gettype($output);
+												echo $output;
 											}
 											else{
 												echo "invalid email address format";
