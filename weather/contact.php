@@ -84,17 +84,14 @@
 									<div class="col-md-6"><input name="first_name" type="text" placeholder="Your name..."></div>
 									<div class="col-md-6"><input name="email" type="text" placeholder="Email Addresss..."></div>
 								</div>
-								<div class="row">
-									<div class="col-md-6"><input type="text" placeholder="Company name..."></div>
-									<div class="col-md-6"><input type="text" placeholder="Website..."></div>
-								</div>
-								<textarea name="" placeholder="Message..."></textarea>
+								<textarea name="email_body" placeholder="Message..."></textarea>
 								<div class="text-right">
 									<input type="submit" placeholder="Send message">
 									<?php
 										$first_name = $_POST["first_name"];
 										$email = $_POST["email"];
-
+										$email_body = $_POST["email_body"];
+										$to = "zdravkoski.lazar@gmail.com";
 										echo print_r($_POST);
 									?>
 								</div>
