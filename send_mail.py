@@ -35,7 +35,7 @@ def send_mail(f_name , email_addr, email_body):
 	finally:
 	    server.quit() 
 
-	print("ISPRATEN EMAIL ||| KRAJ NA SEND_MAIL")
+	print("ISPRATEN EMAIL ||| KRAJ NA SEND_MAIL 	", email_body)
 
 
 send_mail(f_name , email_addr, email_body)
