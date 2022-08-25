@@ -25,8 +25,7 @@ def send_mail(f_name , email_addr, email_body):
 	    email_message = """
 	    Email Message From {email_addr}
 
-	    KAZI I NA MAJKA TI DEKA USPEAV DA ISPRATAM EMAIL GO RESIV PROBLEMOT
-	    OVOJ EMAIL E ISPRATEN OD TAMU
+	    LALA LALA LALA
 
 	    {email_body}""".format(email_addr = email_addr, email_body = email_body)
 
