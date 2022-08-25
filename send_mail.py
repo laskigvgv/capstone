@@ -24,7 +24,7 @@ def send_mail(f_name , email_addr, email_body):
 	    # TODO: Send email here
 
 	    email_message = """
-	    Subject: Contact Form
+	    Subject: TEST SUBJECT\n\n
 
 	    Email Message From {email_addr}
 
