@@ -23,6 +23,8 @@ def send_mail(f_name , email_addr, email_body):
 	    # TODO: Send email here
 
 	    email_message = """
+	    Subject: Contact Form
+	    
 	    Email Message From {email_addr}
 
 	    {email_body}""".format(email_addr = email_addr, email_body = email_body)
@@ -38,4 +40,4 @@ def send_mail(f_name , email_addr, email_body):
 	print("ISPRATEN EMAIL ||| KRAJ NA SEND_MAIL 	", email_body)
 
 
-send_mail(f_name , email_addr, email_body)
+# send_mail(f_name , email_addr, email_body)
