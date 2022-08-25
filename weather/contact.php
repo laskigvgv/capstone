@@ -93,7 +93,7 @@
 										$email_body = $_POST["email_body"];
 
 										if (isset($_POST["first_name"]) && isset($_POST["email"])){
-											echo "Some or all fields are empty"
+											echo "Some or all fields are empty";
 											$to = "zdravkoski.lazar@gmail.com";
 											print_r($_POST);
 										}
