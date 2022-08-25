@@ -5,7 +5,7 @@ import sys
 f_name , email_addr, email_body= sys.argv[1], sys.argv[2], sys.argv[3]
 
 def send_mail(f_name , email_addr, email_body):
-
+	print("email body na pocetok	", email_body)
 	smtp_server = "smtp.gmail.com"
 	port = 587
 	sender_email = "zdr.lazar.salesrocks@gmail.com"
