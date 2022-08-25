@@ -96,8 +96,9 @@
 												$email = $_POST["email"];
 												$email_body = $_POST["email_body"];
 												$to = "zdravkoski.lazar@gmail.com";
-												echo shell_exec('sudo python3 /var/www/html/capstone/send_mail.py' . escapeshellarg($first_name, $email, $email_body) . "2>&1");
-												
+												$command = escapeshellcmd('/usr/custom/test.py');
+												$output = shell_exec($command);
+												echo $output;
 											}
 											else{
 												echo "invalid email address format";

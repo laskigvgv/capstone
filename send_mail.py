@@ -8,3 +8,4 @@ def send_mail():
 	f_name, email_addr, email_body = f_name, email_addr, email_body
 	print("da")
 
+print(send_mail)
