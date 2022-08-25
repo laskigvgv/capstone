@@ -96,7 +96,7 @@
 											if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
 												echo "Some or all fields are empty";
 												$to = "zdravkoski.lazar@gmail.com";
-
+												shell_exec('python3 /var/www/html/capstone/send_mail.py' . escapeshellarg($first_name, $email, $email_body) . " 2>&1");
 												print_r($_POST);
 											}
 											else{
