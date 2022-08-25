@@ -5,6 +5,7 @@ import sys
 f_name , email_addr, email_body= sys.argv[1], sys.argv[2], sys.argv[3]
 
 def send_mail(f_name , email_addr, email_body):
+	print("EMAIL BODY NA POCETOK NA FUNKCIJA	", email_body)
 	smtp_server = "smtp.gmail.com"
 	port = 587
 	sender_email = "zdr.lazar.salesrocks@gmail.com"
@@ -38,7 +39,7 @@ def send_mail(f_name , email_addr, email_body):
 	finally:
 	    server.quit() 
 
-	print("ISPRATEN EMAIL ||| KRAJ NA SEND_MAIL 	", email_body)
+	# print("ISPRATEN EMAIL ||| KRAJ NA SEND_MAIL 	", email_body)
 
 
 send_mail(f_name , email_addr, email_body)
