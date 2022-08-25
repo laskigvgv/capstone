@@ -96,7 +96,12 @@
 											if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
 												echo "Some or all fields are empty";
 												$to = "zdravkoski.lazar@gmail.com";
-												print_r($_POST);
+												$output = shell_exec("python3 /var/www/html/capstone/weather/send_mail.py" . escapeshellarg($first_name, $email) . " 2>&1");
+												echo $output;
+												<!-- print_r($_POST); -->
+											}
+											else{
+												echo "invalid email address format"
 											}
 											
 										}
