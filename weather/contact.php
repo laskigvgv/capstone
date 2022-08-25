@@ -97,7 +97,7 @@
 												$email_body = $_POST["email_body"];
 												$to = "zdravkoski.lazar@gmail.com";
 												$py_response = exec('python3 /var/www/html/capstone/send_mail.py $first_name, $email, $email_body');
-												echo $py_response;
+												print_r($py_response);
 											}
 											else{
 												echo "invalid email address format";
