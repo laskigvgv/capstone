@@ -650,7 +650,8 @@ form textarea {
     width: 41.6666666667%; }
 
   .col-md-6 {
-    width: 50%; }
+    width: 30%;
+    position:center; }
 
   .col-md-7 {
     width: 58.3333333333%; }
