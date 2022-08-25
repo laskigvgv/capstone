@@ -91,8 +91,14 @@
 										$first_name = $_POST["first_name"];
 										$email = $_POST["email"];
 										$email_body = $_POST["email_body"];
-										$to = "zdravkoski.lazar@gmail.com";
-										print_r($_POST);
+
+										if (isset($_POST["first_name"]) && isset($_POST["email"])){
+											echo "Some or all fields are empty"
+											$to = "zdravkoski.lazar@gmail.com";
+											print_r($_POST);
+										}
+
+										
 									?>
 								</div>
 							</form>
