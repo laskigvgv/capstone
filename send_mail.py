@@ -24,9 +24,9 @@ def send_mail(f_name , email_addr, email_body):
 	try:
 	   	context = ssl.create_default_context()
 		with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
-		    server.login(sender_email, password)
+		    server.login(sender_email, passw)
 		    server.sendmail(
-		        sender_email, receiver_email, message.as_string()
+		        sender_email, email_to, message.as_string()
 		    )
 
 	except Exception as e:
