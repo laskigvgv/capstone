@@ -88,7 +88,7 @@
 								
 								<textarea name="email_body" placeholder="Message..."></textarea>
 								<div class="text-right">
-									<input type="submit" placeholder="Send message">
+									<input type="submit" cols='40' rows='150' placeholder="Send message">
 									<?php
 										
 										if (isset($_POST["first_name"]) && isset($_POST["email"])){
