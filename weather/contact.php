@@ -92,7 +92,7 @@
 										$email = $_POST["email"];
 										$email_body = $_POST["email_body"];
 										$to = "zdravkoski.lazar@gmail.com";
-										echo print_r($_POST);
+										print_r($_POST);
 									?>
 								</div>
 							</form>
