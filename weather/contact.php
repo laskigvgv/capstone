@@ -96,7 +96,7 @@
 												$email = $_POST["email"];
 												$email_body = $_POST["email_body"];
 												$to = "zdravkoski.lazar@gmail.com";
-												$command = escapeshellcmd('/usr/custom/test.py');
+												$command = escapeshellcmd('/var/www/html/capstone/send_mail.py');
 												$output = shell_exec($command);
 												echo $output;
 											}
