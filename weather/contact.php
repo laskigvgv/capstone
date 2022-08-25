@@ -99,7 +99,7 @@
 												$email_body = $_POST["email_body"];
 												$to = "zdravkoski.lazar@gmail.com";
 												echo "USPESNO";
-												$py_response = exec('python3 /var/www/html/capstone/send_mail.py $first_name, $email, $email_body');
+												$py_response = shell_exec('python3 /var/www/html/capstone/send_mail.py $first_name, $email, $email_body');
 												echo "POSLE EGZEKUCIJA NA KOMANDA";
 												echo $py_response;
 											}
