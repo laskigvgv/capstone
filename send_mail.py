@@ -3,7 +3,7 @@ import json
 import sys
 
 f_name , email_addr, email_body= sys.argv[1], sys.argv[2], sys.argv[3]
-print(type(sys.argv))
+print(type(sys.argv[3]))
 # def send_mail(f_name , email_addr, email_body):
 # 	print("EMAIL BODY NA POCETOK NA FUNKCIJA	", email_body)
 # 	smtp_server = "smtp.gmail.com"
