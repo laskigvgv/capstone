@@ -19,7 +19,7 @@ def send_mail(f_name , email_addr, email_body):
 	    server.ehlo()
 	    server.starttls(context=context)
 	    server.ehlo()
-	    server.login(sender_email, password)
+	    server.login(sender_email, passw)
 	    # TODO: Send email here
 
 	    email_message = """
