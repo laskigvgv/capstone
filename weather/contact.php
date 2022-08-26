@@ -98,8 +98,8 @@
 												$to = "zdravkoski.lazar@gmail.com";
 												echo gettype($email_body) . " PRED PYTHON";
 												$command = escapeshellcmd("python3 /var/www/html/capstone/send_mail.py " . $first_name . " " . $email . " " . escapeshellarg($email_body));
-												$output = shell_exec($command);
-												echo $output;
+												shell_exec($command);
+												
 											}
 											else{
 												echo "invalid email address format";
