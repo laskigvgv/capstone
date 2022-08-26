@@ -57,7 +57,7 @@
 							<li class="menu-item current-menu-item"><a href="index.php">Home</a></li>
 							<li class="menu-item"><a href="news.php">7 Day Forecast</a></li>
 							<li class="menu-item"><a href="photos.html">Photos</a></li>
-							<li class="menu-item"><a href="contact.html">Contact</a></li>
+							<li class="menu-item"><a href="contact.php">Contact</a></li>
 						</ul> <!-- .menu -->
 					</div> <!-- .main-navigation -->
 
