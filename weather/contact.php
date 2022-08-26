@@ -27,7 +27,7 @@
 		<div class="site-content">
 			<div class="site-header">
 				<div class="container">
-					<a href="index.html" class="branding">
+					<a href="index.php" class="branding">
 						<img src="images/logo.png" alt="" class="logo">
 						<div class="logo-type">
 							<h1 class="site-title">Company name</h1>
@@ -54,7 +54,7 @@
 			<main class="main-content">
 				<div class="container">
 					<div class="breadcrumb">
-						<a href="index.html">Home</a>
+						<a href="index.php">Home</a>
 						<span>Contact</span>
 					</div>
 				</div>
