@@ -17,8 +17,7 @@ def send_mail(f_name , email_addr, email_body):
 	message["From"] = sender_email
 	message["To"] = receiver_email
 
-	text = """\
-	{}""".format(email_body)
+	text = """{}""".format(email_body)
 
 	part1 = MIMEText(text, "plain")
 
