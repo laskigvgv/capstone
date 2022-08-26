@@ -267,7 +267,7 @@ form textarea {
   height: 220px; }
 
 .container {
-  margin-right: 13%;
+  margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
