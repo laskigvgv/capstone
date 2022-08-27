@@ -72,6 +72,8 @@
 			$humidity_day6 = $decoded_result["day_6"]["humidity"];
 			$humidity_day7 = $decoded_result["day_7"]["humidity"];
 
+			$pressure_day1 = $decoded_result["day_1"]["pressure"];
+
 ?>
 
 	</head>
@@ -129,7 +131,7 @@
 										<div id = "min_temp" style="font-size: 11px;">Min. Temperature <?php echo $min_temp_day1; ?><sup>o</sup>C</div>
 										<div id = "max_temp" style="font-size: 11px;">Max. Temperature <?php echo $max_temp_day1; ?><sup>o</sup>C</div>
 										<div id = "humidity" style="font-size: 11px;">Humidity <?php echo $humidity_day1; ?>%</div>
-										<div id = "pressure" style="font-size: 11px;">960</div>
+										<div id = "pressure" style="font-size: 11px;">Pressure: <?php echo $pressure_day1; ?>hPa</div>
 										<div id = "feels_like_avg" style="font-size: 12px;">21</div>
 									</div>
 								</div>
