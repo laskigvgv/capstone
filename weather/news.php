@@ -48,13 +48,13 @@
 			$day6 = date("l", strtotime($decoded_result["day_6"]["date_from_unix"]));
 			$day7 = date("l", strtotime($decoded_result["day_7"]["date_from_unix"]));
 
-			$min_temp_day1 = $decoded_result["day_1"]["temp_min"]
-			$min_temp_day2 = $decoded_result["day_2"]["temp_min"]
-			$min_temp_day3 = $decoded_result["day_3"]["temp_min"]
-			$min_temp_day4 = $decoded_result["day_4"]["temp_min"]
-			$min_temp_day5 = $decoded_result["day_5"]["temp_min"]
-			$min_temp_day6 = $decoded_result["day_6"]["temp_min"]
-			$min_temp_day7 = $decoded_result["day_7"]["temp_min"]
+			$min_temp_day1 = $decoded_result["day_1"]["temp_min"];
+			$min_temp_day2 = $decoded_result["day_2"]["temp_min"];
+			$min_temp_day3 = $decoded_result["day_3"]["temp_min"];
+			$min_temp_day4 = $decoded_result["day_4"]["temp_min"];
+			$min_temp_day5 = $decoded_result["day_5"]["temp_min"];
+			$min_temp_day6 = $decoded_result["day_6"]["temp_min"];
+			$min_temp_day7 = $decoded_result["day_7"]["temp_min"];
 
 ?>
 
