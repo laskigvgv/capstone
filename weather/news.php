@@ -110,7 +110,7 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-										<div id = "min_temp" style="font-size: 12px;">Min. Temperature <?php echo $min_temp_day1 ?></div>
+										<div id = "min_temp" style="font-size: 12px;">Min. Temperature <?php echo $min_temp_day1; ?></div>
 										<div id = "max_temp" style="font-size: 12px;">22</div>
 										<div id = "humidity" style="font-size: 12px;">40%</div>
 										<div id = "pressure" style="font-size: 12px;">960</div>
