@@ -19,6 +19,30 @@
 		<script src="js/ie-support/respond.js"></script>
 		<![endif]-->
 
+		<?php
+			function get_connection(){
+				$servername = "127.0.0.1";
+				$username = "capstone";
+				$password = "lazar";
+				$dbname = "capston_project";
+
+				$conn = mysqli_connect($servername, $username, $password, $dbname	);
+				$conn = get_connection();
+				$sql = "SELECT one_week FROM week_forecast ORDER BY ind DESC LIMIT 1;";
+				$result = $conn->query($sql)->fetch_assoc();
+				$decoded_result = json_decode($result["one_week"],true);
+
+				if(!$conn)
+					return mysqli_connect_error();
+				else
+					return $conn;
+			}
+		?>
+
+		<?php 
+			$day_in_week = date("l", strtotime($decoded_result["day_1"]["date_from_unix"]));
+		?>
+
 	</head>
 
 
@@ -70,8 +94,7 @@
 							<div class="day">
 								
 							</div>
-								<div class="date">Last Measurement Time:	
-								</div>
+								<div class="date"><?php echo date('l', strtotime($decoded_result["day_1"]["date_from_unix"])); ?></div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 								<!-- <div class="location">Gostivar</div>		 -->
