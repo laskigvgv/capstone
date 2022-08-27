@@ -1229,7 +1229,7 @@ form textarea {
   width: 100%;
   background: #323544;
   display: table;
-  table-layout: fixed;
+  /*table-layout: fixed;*/
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
