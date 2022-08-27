@@ -96,15 +96,10 @@
 					<div class="forecast-container">
 						<div class="today forecast">
 							<div class="forecast-header">
-								
-							<div class="day">
-								
-							</div>
-								<div class="date" style="text-align: left;"><?php echo $day1; ?></div>
+								<div class="day">Humidity</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
-								<!-- <div class="location">Gostivar</div>		 -->
-								<div class="degree">
+							<div class="degree">
 									<div class="num">
 										<div id = "min_temp" style="font-size: 12px;">22</div>
 										<div id = "max_temp" style="font-size: 12px;">22</div>
