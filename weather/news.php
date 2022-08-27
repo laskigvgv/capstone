@@ -80,6 +80,14 @@
 			$pressure_day6 = $decoded_result["day_6"]["pressure"];
 			$pressure_day7 = $decoded_result["day_7"]["pressure"];
 
+			$feels_like_avg_day1 = $decoded_result["day_1"]["feels_like_avg"];
+			$feels_like_avg_day2 = $decoded_result["day_2"]["feels_like_avg"];
+			$feels_like_avg_day3 = $decoded_result["day_3"]["feels_like_avg"];
+			$feels_like_avg_day4 = $decoded_result["day_4"]["feels_like_avg"];
+			$feels_like_avg_day5 = $decoded_result["day_5"]["feels_like_avg"];
+			$feels_like_avg_day6 = $decoded_result["day_6"]["feels_like_avg"];
+			$feels_like_avg_day7 = $decoded_result["day_7"]["feels_like_avg"];
+
 ?>
 
 	</head>
@@ -138,7 +146,7 @@
 										<div id = "max_temp" style="font-size: 11px;">Max. Temperature: <?php echo $max_temp_day1; ?><sup>o</sup>C</div>
 										<div id = "humidity" style="font-size: 11px;">Humidity: <?php echo $humidity_day1; ?>%</div>
 										<div id = "pressure" style="font-size: 11px;">Pressure: <?php echo $pressure_day1; ?>hPa</div>
-										<div id = "feels_like_avg" style="font-size: 12px;">21</div>
+										<div id = "feels_like_avg" style="font-size: 12px;">Feels Like: <?php echo $feels_like_avg_day1; ?><sup>o</sup>C</div>
 									</div>
 								</div>
 							</div>
