@@ -127,9 +127,13 @@
 							<div class="degree">
 									<div class="num">
 										<div id = "min_temp" style="font-size: 12px;">Min. Temperature <?php echo $min_temp_day1; ?><sup>o</sup>C</div>
+										<br>
 										<div id = "max_temp" style="font-size: 12px;">Max. Temperature <?php echo $max_temp_day1; ?><sup>o</sup>C</div>
+										<br>
 										<div id = "humidity" style="font-size: 12px;">Humidity <?php echo $humidity_day1; ?>%</div>
+										<br>
 										<div id = "pressure" style="font-size: 12px;">960</div>
+										<br>
 										<div id = "feels_like_avg" style="font-size: 12px;">21</div>
 									</div>
 								</div>
