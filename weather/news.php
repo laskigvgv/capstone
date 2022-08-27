@@ -128,6 +128,7 @@
 								</div>
 							</div>
 						</div>
+						</div>
 						<div class="today forecast">
 							<div class="forecast-header">
 								<div class="day">Humidity</div>
