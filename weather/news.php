@@ -96,7 +96,7 @@
 					<div class="forecast-container">
 						<div class="today forecast">
 							<div class="forecast-header">
-								<div class="day">Humidity</div>
+								<div class="day"><?php echo $day1; ?></div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 							<div class="degree">
@@ -112,7 +112,7 @@
 						</div>
 						<div class="today forecast">
 							<div class="forecast-header">
-								<div class="day">Humidity</div>
+								<div class="day"><?php echo $day2; ?></div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 							<div class="degree">
@@ -128,7 +128,7 @@
 						</div>
 						<div class="today forecast">
 							<div class="forecast-header">
-								<div class="day">Air Pressure</div>
+								<div class="day"><?php echo $day3; ?></div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 							<div class="degree">
