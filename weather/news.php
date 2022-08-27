@@ -39,7 +39,13 @@
 			$sql = "SELECT one_week FROM week_forecast ORDER BY ind DESC LIMIT 1;";
 			$result = $conn->query($sql)->fetch_assoc();
 			$decoded_result = json_decode($result["one_week"],true);
-			$day_in_week = date("l", strtotime($decoded_result["day_1"]["date_from_unix"]));
+			$day1 = date("l", strtotime($decoded_result["day_1"]["date_from_unix"]));
+			$day2 = date("l", strtotime($decoded_result["day_2"]["date_from_unix"]));
+			$day3 = date("l", strtotime($decoded_result["day_3"]["date_from_unix"]));
+			$day4 = date("l", strtotime($decoded_result["day_4"]["date_from_unix"]));
+			$day5 = date("l", strtotime($decoded_result["day_5"]["date_from_unix"]));
+			$day6 = date("l", strtotime($decoded_result["day_6"]["date_from_unix"]));
+			$day7 = date("l", strtotime($decoded_result["day_7"]["date_from_unix"]));
 
 ?>
 
@@ -94,7 +100,7 @@
 							<div class="day">
 								
 							</div>
-								<div class="date"><?php echo $day_in_week; ?></div>
+								<div class="date" style="text-align: left;"><?php echo $day1; ?></div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 								<!-- <div class="location">Gostivar</div>		 -->
