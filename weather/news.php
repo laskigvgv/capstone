@@ -77,7 +77,8 @@
 								<!-- <div class="location">Gostivar</div>		 -->
 								<div class="degree">
 									<div class="num">
-										<div style="font-size: 12px;">22</div>
+										<div id = "temperature" style="font-size: 12px;">22</div>
+										<div id = "humidity" style="font-size: 12px;"></div>
 									</div>
 								</div>
 							</div>
