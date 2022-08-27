@@ -68,26 +68,16 @@
 							<div class="forecast-header">
 								
 							<div class="day">
-								<?php 
-									$conn = get_connection();
-									$sql = "SELECT DAYNAME(DATE(time_stamp)) as week_day, TIME(time_stamp) as datum, temperature as tmp, humidity as humm, pressure as press FROM weather_data ORDER BY id DESC;";
-									$result = $conn->query($sql)->fetch_assoc();
-
-									echo $result["week_day"];
-
-								?>
+								
 							</div>
-								<div class="date">Last Measurement Time:	<?php 
-									echo $result["datum"]; ?>
+								<div class="date">Last Measurement Time:	
 								</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 								<!-- <div class="location">Gostivar</div>		 -->
 								<div class="degree">
 									<div class="num">
-										<?php
-											echo $result["tmp"]
-										?>
+										
 										
 										<sup>o</sup>C<img src="images/icons/temperature.gif" width="45px" height="45px" loop="infinite"></div>
 								</div>
@@ -100,9 +90,7 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-										<?php
-											echo $result["humm"]
-										?> %	
+											
 									</div>
 								</div>
 							</div>
@@ -114,9 +102,7 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-										<?php
-											echo $result["press"]
-										?>hPa
+										
 									</div>
 								</div>
 								
