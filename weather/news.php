@@ -41,6 +41,7 @@
 
 		<?php 
 			$day_in_week = date("l", strtotime($decoded_result["day_1"]["date_from_unix"]));
+			echo date('l', strtotime($decoded_result["day_1"]["date_from_unix"]));
 		?>
 
 	</head>
@@ -94,7 +95,7 @@
 							<div class="day">
 								
 							</div>
-								<div class="date"><?php echo date('l', strtotime($decoded_result["day_1"]["date_from_unix"])); ?></div>
+								<div class="date"><?php $decoded_result["day_1"]["date_from_unix"]) ?></div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 								<!-- <div class="location">Gostivar</div>		 -->
