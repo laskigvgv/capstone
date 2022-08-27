@@ -78,7 +78,7 @@
 								<div class="degree">
 									<div class="num">
 										<div id = "temperature" style="font-size: 12px;">22</div>
-										<div id = "humidity" style="font-size: 12px;"></div>
+										<div id = "humidity" style="font-size: 12px;">40%</div>
 									</div>
 								</div>
 							</div>
