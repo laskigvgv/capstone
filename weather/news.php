@@ -56,6 +56,14 @@
 			$min_temp_day6 = $decoded_result["day_6"]["temp_min"];
 			$min_temp_day7 = $decoded_result["day_7"]["temp_min"];
 
+			$max_temp_day1 = $decoded_result["day_1"]["temp_max"];
+			$max_temp_day2 = $decoded_result["day_2"]["temp_max"];
+			$max_temp_day3 = $decoded_result["day_3"]["temp_max"];
+			$max_temp_day4 = $decoded_result["day_4"]["temp_max"];
+			$max_temp_day5 = $decoded_result["day_5"]["temp_max"];
+			$max_temp_day6 = $decoded_result["day_6"]["temp_max"];
+			$max_temp_day7 = $decoded_result["day_7"]["temp_max"];
+
 ?>
 
 	</head>
@@ -111,7 +119,7 @@
 							<div class="degree">
 									<div class="num">
 										<div id = "min_temp" style="font-size: 12px;">Min. Temperature <?php echo $min_temp_day1; ?></div>
-										<div id = "max_temp" style="font-size: 12px;">22</div>
+										<div id = "max_temp" style="font-size: 12px;">Max. Temperature <?php echo $max_temp_day1; ?></div>
 										<div id = "humidity" style="font-size: 12px;">40%</div>
 										<div id = "pressure" style="font-size: 12px;">960</div>
 										<div id = "feels_like_avg" style="font-size: 12px;">21</div>
@@ -126,7 +134,7 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-										<div id = "min_temp" style="font-size: 12px;">22</div>
+										<div id = "min_temp" style="font-size: 12px;">Min. Temperature <?php echo $min_temp_day2; ?></div>
 										<div id = "max_temp" style="font-size: 12px;">22</div>
 										<div id = "humidity" style="font-size: 12px;">40%</div>
 										<div id = "pressure" style="font-size: 12px;">960</div>
