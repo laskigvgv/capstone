@@ -173,10 +173,10 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-										<div id = "min_temp" style="font-size: 11px;">Min. Temperature <?php echo $min_temp_day3; ?><sup>o</sup>C</div>
-										<div id = "max_temp" style="font-size: 11px;">Max. Temperature <?php echo $max_temp_day3; ?><sup>o</sup>C</div>
-										<div id = "humidity" style="font-size: 11px;">Humidity <?php echo $humidity_day3; ?>%</div>
-										<div id = "pressure" style="font-size: 11px;">Pressure: <?php echo $pressure_day3; ?>hPa</div>
+										<div id = "min_temp" style="font-size: 12px;">Min. Temp: <?php echo $min_temp_day3; ?><sup>o</sup>C</div>
+										<div id = "max_temp" style="font-size: 12px;">Max. Temp: <?php echo $max_temp_day3; ?><sup>o</sup>C</div>
+										<div id = "humidity" style="font-size: 12px;">Humidity <?php echo $humidity_day3; ?>%</div>
+										<div id = "pressure" style="font-size: 12px;">Pressure: <?php echo $pressure_day3; ?>hPa</div>
 										<div id = "feels_like_avg" style="font-size: 12px;">Feels Like: <?php echo $feels_like_avg_day3; ?><sup>o</sup>C</div>
 									</div>
 								</div>
@@ -190,10 +190,10 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-										<div id = "min_temp" style="font-size: 11px;">Min. Temperature <?php echo $min_temp_day4; ?><sup>o</sup>C</div>
-										<div id = "max_temp" style="font-size: 11px;">Max. Temperature <?php echo $max_temp_day4; ?><sup>o</sup>C</div>
-										<div id = "humidity" style="font-size: 11px;">Humidity <?php echo $humidity_day4; ?>%</div>
-										<div id = "pressure" style="font-size: 11px;">Pressure: <?php echo $pressure_day4; ?>hPa</div>
+										<div id = "min_temp" style="font-size: 12px;">Min. Temp: <?php echo $min_temp_day4; ?><sup>o</sup>C</div>
+										<div id = "max_temp" style="font-size: 12px;">Max. Temp: <?php echo $max_temp_day4; ?><sup>o</sup>C</div>
+										<div id = "humidity" style="font-size: 12px;">Humidity <?php echo $humidity_day4; ?>%</div>
+										<div id = "pressure" style="font-size: 12px;">Pressure: <?php echo $pressure_day4; ?>hPa</div>
 										<div id = "feels_like_avg" style="font-size: 12px;">Feels Like: <?php echo $feels_like_avg_day4; ?><sup>o</sup>C</div>
 									</div>
 								</div>
@@ -207,10 +207,10 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-										<div id = "min_temp" style="font-size: 11px;">Min. Temperature <?php echo $min_temp_day5; ?><sup>o</sup>C</div>
-										<div id = "max_temp" style="font-size: 11px;">Max. Temperature <?php echo $max_temp_day5; ?><sup>o</sup>C</div>
-										<div id = "humidity" style="font-size: 11px;">Humidity <?php echo $humidity_day5; ?>%</div>
-										<div id = "pressure" style="font-size: 11px;">Pressure: <?php echo $pressure_day5; ?>hPa</div>
+										<div id = "min_temp" style="font-size: 12px;">Min. Temp: <?php echo $min_temp_day5; ?><sup>o</sup>C</div>
+										<div id = "max_temp" style="font-size: 12px;">Max. Temp: <?php echo $max_temp_day5; ?><sup>o</sup>C</div>
+										<div id = "humidity" style="font-size: 12px;">Humidity <?php echo $humidity_day5; ?>%</div>
+										<div id = "pressure" style="font-size: 12px;">Pressure: <?php echo $pressure_day5; ?>hPa</div>
 										<div id = "feels_like_avg" style="font-size: 12px;">Feels Like: <?php echo $feels_like_avg_day5; ?><sup>o</sup>C</div>
 									</div>
 								</div>
@@ -224,10 +224,10 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-										<div id = "min_temp" style="font-size: 11px;">Min. Temperature <?php echo $min_temp_day6; ?><sup>o</sup>C</div>
-										<div id = "max_temp" style="font-size: 11px;">Max. Temperature <?php echo $max_temp_day6; ?><sup>o</sup>C</div>
-										<div id = "humidity" style="font-size: 11px;">Humidity <?php echo $humidity_day6; ?>%</div>
-										<div id = "pressure" style="font-size: 11px;">Pressure: <?php echo $pressure_day6; ?>hPa</div>
+										<div id = "min_temp" style="font-size: 12px;">Min. Temp: <?php echo $min_temp_day6; ?><sup>o</sup>C</div>
+										<div id = "max_temp" style="font-size: 12px;">Max. Temp: <?php echo $max_temp_day6; ?><sup>o</sup>C</div>
+										<div id = "humidity" style="font-size: 12px;">Humidity <?php echo $humidity_day6; ?>%</div>
+										<div id = "pressure" style="font-size: 12px;">Pressure: <?php echo $pressure_day6; ?>hPa</div>
 										<div id = "feels_like_avg" style="font-size: 12px;">Feels Like: <?php echo $feels_like_avg_day6; ?><sup>o</sup>C</div>
 									</div>
 								</div>
@@ -241,10 +241,10 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-										<div id = "min_temp" style="font-size: 11px;">Min. Temperature <?php echo $min_temp_day7; ?><sup>o</sup>C</div>
-										<div id = "max_temp" style="font-size: 11px;">Max. Temperature <?php echo $max_temp_day7; ?><sup>o</sup>C</div>
-										<div id = "humidity" style="font-size: 11px;">Humidity <?php echo $humidity_day7; ?>%</div>
-										<div id = "pressure" style="font-size: 11px;">Pressure: <?php echo $pressure_day7; ?>hPa</div>
+										<div id = "min_temp" style="font-size: 12px;">Min. Temp: <?php echo $min_temp_day7; ?><sup>o</sup>C</div>
+										<div id = "max_temp" style="font-size: 12px;">Max. Temp: <?php echo $max_temp_day7; ?><sup>o</sup>C</div>
+										<div id = "humidity" style="font-size: 12px;">Humidity <?php echo $humidity_day7; ?>%</div>
+										<div id = "pressure" style="font-size: 12px;">Pressure: <?php echo $pressure_day7; ?>hPa</div>
 										<div id = "feels_like_avg" style="font-size: 12px;">Feels Like: <?php echo $feels_like_avg_day7; ?><sup>o</sup>C</div>
 									</div>
 								</div>
