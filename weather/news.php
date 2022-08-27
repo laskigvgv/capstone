@@ -19,23 +19,6 @@
 		<script src="js/ie-support/respond.js"></script>
 		<![endif]-->
 
-		<?php
-		function get_connection(){
-			$servername = "127.0.0.1";
-			$username = "capstone";
-			$password = "lazar";
-			$dbname = "capston_project";
-
-			$conn = mysqli_connect($servername, $username, $password, $dbname	);
-			if(!$conn)
-				return mysqli_connect_error();
-			else
-				return $conn;
-		}
-
-
-	?>
-
 	</head>
 
 
@@ -44,7 +27,7 @@
 		<div class="site-content">
 			<div class="site-header">
 				<div class="container">
-					<a href="index.php" class="branding">
+					<a href="index.html" class="branding">
 						<img src="images/logo.png" alt="" class="logo">
 						<div class="logo-type">
 							<h1 class="site-title">Company name</h1>
@@ -56,10 +39,11 @@
 					<div class="main-navigation">
 						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
 						<ul class="menu">
-							<li class="menu-item"><a href="index.php">Home</a></li>
-							<li class="menu-item current-menu-item"><a href="news.php">7 Day Forecast</a></li>
+							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item current-menu-item"><a href="news.html">News</a></li>
+							<li class="menu-item"><a href="live-cameras.html">Live cameras</a></li>
 							<li class="menu-item"><a href="photos.html">Photos</a></li>
-							<li class="menu-item"><a href="contact.php">Contact</a></li>
+							<li class="menu-item"><a href="contact.html">Contact</a></li>
 						</ul> <!-- .menu -->
 					</div> <!-- .main-navigation -->
 
@@ -69,101 +53,78 @@
 			</div> <!-- .site-header -->
 
 			<main class="main-content">
-				<div class="container" style="margin-bottom: 10px;">
+				<div class="container">
 					<div class="breadcrumb">
-						<a href="index.php">Home</a>
-						<span>7 Day Forecast</span>
+						<a href="index.html">Home</a>
+						<span>News</span>
 					</div>
 				</div>
 				
 
-				<div class="forecast-table">
-				<div class="container">
-					<div class="forecast-container">
-						<div class="today forecast">
-							<div class="forecast-header">
-								
-							<div class="day">
-								<?php 
-									$conn = get_connection();
-									$sql = "SELECT one_week FROM week_forecast ORDER BY ind DESC LIMIT 1;";
-									$result = $conn->query($sql)->fetch_assoc();
-									$decoded_result = json_decode($result["one_week"],true);
-									$day_in_week = date("l", strtotime($decoded_result["day_1"]["date_from_unix"]));
-									echo date('l', strtotime($decoded_result["day_1"]["date_from_unix"]));
-
-								?>
-							</div>
-								<div class="date">Last Measurement Time:	<?php 
-									echo $result; ?>
-								</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<!-- <div class="location">Gostivar</div>		 -->
-								<div >
-									<div style="font-size: 15px;">
-										Min. Temperature: 
-										<?php
-											echo $decoded_result["day_1"]["temp_min"]
-										?><sup>o</sup>C
-										
+				<div class="fullwidth-block">
+					<div class="container">
+						<div class="row">
+							<div class="content col-md-8">
+								<div class="post">
+									<h2 class="entry-title">Nemo enim ipsam voluptatem quia voluptas</h2>
+									<div class="featured-image"><img src="images/featured-image-1.jpg" alt=""></div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nulla rem dolores unde et cum illum odio, enim quis odit eveniet quaerat non libero, consequatur voluptatem harum ad veritatis necessitatibus.</p>
+									<a href="single.html" class="button">Read more</a>
 								</div>
 
-								<div >
-									<div >
-										Max. Temperature: 
-										<?php
-											echo $decoded_result["day_1"]["temp_max"]
-										?><sup>o</sup>C
-										
+								<div class="post">
+									<h2 class="entry-title">Nemo enim ipsam voluptatem quia voluptas</h2>
+									<div class="featured-image"><img src="images/featured-image-2.jpg" alt=""></div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nulla rem dolores unde et cum illum odio, enim quis odit eveniet quaerat non libero, consequatur voluptatem harum ad veritatis necessitatibus.</p>
+									<a href="single.html" class="button">Read more</a>
 								</div>
 
-								<div >
-									<div >
-										Feels Like: 
-										<?php
-											echo $decoded_result["day_1"]["feels_like_avg"]
-										?><sup>o</sup>C
-										
+								<div class="post">
+									<h2 class="entry-title">Nemo enim ipsam voluptatem quia voluptas</h2>
+									<div class="featured-image"><img src="images/featured-image-3.jpg" alt=""></div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nulla rem dolores unde et cum illum odio, enim quis odit eveniet quaerat non libero, consequatur voluptatem harum ad veritatis necessitatibus.</p>
+									<a href="single.html" class="button">Read more</a>
+								</div>
+							</div>
+							<div class="sidebar col-md-3 col-md-offset-1">
+								<div class="widget">
+									<h3 class="widget-title">Hot News</h3>
+									<ul class="arrow-list">
+										<li><a href="#">Accusamus dignissimos</a></li>
+										<li><a href="#">Ducimus praesentium</a></li>
+										<li><a href="#">Voluptatum deleniti corrupti</a></li>
+										<li><a href="#">Wuos dolores excepturi sint</a></li>
+										<li><a href="#">Occaecati provident dolor</a></li>
+									</ul>
+								</div>
+
+								<div class="widget">
+									<h3 class="widget-title">Categories</h3>
+									<ul class="arrow-list">
+										<li><a href="#">Nemo enim ipsam</a></li>
+										<li><a href="#">Voluptatem voluptas</a></li>
+										<li><a href="#">Aspernatur aut odit</a></li>
+										<li><a href="#">Consequuntur magni</a></li>
+										<li><a href="#">Dolores ratione</a></li>
+										<li><a href="#">Voluptatem nesciunt</a></li>
+										<li><a href="#">Neque porro quisquam</a></li>
+										<li><a href="#">Dolorem ipsum quia</a></li>
+									</ul>
+								</div>
+
+								<div class="widget top-rated">
+									<h3 class="widget-title">Top rated posts</h3>
+									<ul>
+										<li><h3 class="entry-title"><a href="#">Doloremque laudantium lorem</a></h3><div class="rating"><strong>5.5</strong> (759 rates)</div></li>
+										<li><h3 class="entry-title"><a href="#">Doloremque laudantium lorem</a></h3><div class="rating"><strong>5.5</strong> (759 rates)</div></li>
+										<li><h3 class="entry-title"><a href="#">Doloremque laudantium lorem</a></h3><div class="rating"><strong>5.5</strong> (759 rates)</div></li>
+										<li><h3 class="entry-title"><a href="#">Doloremque laudantium lorem</a></h3><div class="rating"><strong>5.5</strong> (759 rates)</div></li>
+									</ul>
 								</div>
 							</div>
 						</div>
-						</div>
-						<div class="today forecast">
-							<div class="forecast-header">
-								<div class="day">Humidity</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-							<div class="degree">
-									<div>
-										<?php
-											echo $result["humm"]
-										?> %	
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="today forecast">
-							<div class="forecast-header">
-								<div class="day">Air Pressure</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-							<div class="degree">
-									<div class="num">
-										<?php
-											echo $result["press"]
-										?>hPa
-									</div>
-								</div>
-								
-							</div>
-						</div>
-						
 					</div>
 				</div>
-			</div>
-
-
 			</main> <!-- .main-content -->
 
 			<footer class="site-footer">
