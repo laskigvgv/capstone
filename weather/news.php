@@ -77,7 +77,7 @@
 								<!-- <div class="location">Gostivar</div>		 -->
 								<div class="degree">
 									<div class="num">
-										15
+										<div style="font-size: 12px;">22</div>
 									</div>
 								</div>
 							</div>
