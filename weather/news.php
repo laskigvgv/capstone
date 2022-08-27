@@ -44,7 +44,7 @@
 		<div class="site-content">
 			<div class="site-header">
 				<div class="container">
-					<a href="index.html" class="branding">
+					<a href="index.php" class="branding">
 						<img src="images/logo.png" alt="" class="logo">
 						<div class="logo-type">
 							<h1 class="site-title">Company name</h1>
@@ -59,7 +59,7 @@
 							<li class="menu-item"><a href="index.php">Home</a></li>
 							<li class="menu-item current-menu-item"><a href="news.php">7 Day Forecast</a></li>
 							<li class="menu-item"><a href="photos.html">Photos</a></li>
-							<li class="menu-item"><a href="contact.html">Contact</a></li>
+							<li class="menu-item"><a href="contact.php">Contact</a></li>
 						</ul> <!-- .menu -->
 					</div> <!-- .main-navigation -->
 
@@ -134,7 +134,7 @@
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 							<div class="degree">
-									<div class="num">
+									<div>
 										<?php
 											echo $result["humm"]
 										?> %	
