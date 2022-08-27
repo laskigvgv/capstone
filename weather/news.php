@@ -93,7 +93,11 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-											
+										<div id = "min_temp" style="font-size: 12px;">22</div>
+										<div id = "max_temp" style="font-size: 12px;">22</div>
+										<div id = "humidity" style="font-size: 12px;">40%</div>
+										<div id = "pressure" style="font-size: 12px;">960</div>
+										<div id = "feels_like_avg" style="font-size: 12px;">21</div>
 									</div>
 								</div>
 							</div>
@@ -105,20 +109,11 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-										
-									</div>
-								</div>
-								
-							</div>
-						</div>
-						<div class="today forecast">
-							<div class="forecast-header">
-								<div class="day">Air Pressure</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-							<div class="degree">
-									<div class="num">
-										
+										<div id = "min_temp" style="font-size: 12px;">22</div>
+										<div id = "max_temp" style="font-size: 12px;">22</div>
+										<div id = "humidity" style="font-size: 12px;">40%</div>
+										<div id = "pressure" style="font-size: 12px;">960</div>
+										<div id = "feels_like_avg" style="font-size: 12px;">21</div>
 									</div>
 								</div>
 								
@@ -131,7 +126,11 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-										
+										<div id = "min_temp" style="font-size: 12px;">22</div>
+										<div id = "max_temp" style="font-size: 12px;">22</div>
+										<div id = "humidity" style="font-size: 12px;">40%</div>
+										<div id = "pressure" style="font-size: 12px;">960</div>
+										<div id = "feels_like_avg" style="font-size: 12px;">21</div>
 									</div>
 								</div>
 								
@@ -144,7 +143,11 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-										
+										<div id = "min_temp" style="font-size: 12px;">22</div>
+										<div id = "max_temp" style="font-size: 12px;">22</div>
+										<div id = "humidity" style="font-size: 12px;">40%</div>
+										<div id = "pressure" style="font-size: 12px;">960</div>
+										<div id = "feels_like_avg" style="font-size: 12px;">21</div>
 									</div>
 								</div>
 								
@@ -157,7 +160,28 @@
 							<div class="forecast-content">
 							<div class="degree">
 									<div class="num">
-										
+										<div id = "min_temp" style="font-size: 12px;">22</div>
+										<div id = "max_temp" style="font-size: 12px;">22</div>
+										<div id = "humidity" style="font-size: 12px;">40%</div>
+										<div id = "pressure" style="font-size: 12px;">960</div>
+										<div id = "feels_like_avg" style="font-size: 12px;">21</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="today forecast">
+							<div class="forecast-header">
+								<div class="day">Air Pressure</div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+							<div class="degree">
+									<div class="num">
+										<div id = "min_temp" style="font-size: 12px;">22</div>
+										<div id = "max_temp" style="font-size: 12px;">22</div>
+										<div id = "humidity" style="font-size: 12px;">40%</div>
+										<div id = "pressure" style="font-size: 12px;">960</div>
+										<div id = "feels_like_avg" style="font-size: 12px;">21</div>
 									</div>
 								</div>
 								
