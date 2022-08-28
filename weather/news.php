@@ -129,7 +129,7 @@
 						<span>7 Day Forecast</span>
 					</div>
 				</div>
-				<div style="width: 100%; height: 20%; background-image: url('toronto.jpeg');">
+				<div style="width: 1000px; height: 553px; background-image: url('toronto.jpeg');">
 					
 				</div>
 
