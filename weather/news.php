@@ -141,7 +141,15 @@
 					<div class="forecast-container">
 						<div class="today forecast">
 							<div class="forecast-header">
-								<div class="day"><?php echo $day1; ?></div>
+								<div class="day"><?php 
+									foreach ($days as $day){
+										foreach ($measurements as $measure){
+											if ($day == 'day_1' && $measure == 'date_from_unix')
+											echo date("l", strtotime($decoded_result[$day][$measure]));
+										}
+									} ?>
+				
+								</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
 							<div class="degree">
