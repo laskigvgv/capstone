@@ -111,7 +111,7 @@
 						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
 						<ul class="menu">
 							<li class="menu-item"><a href="index.php">Home</a></li>
-							<li class="menu-item current-menu-item"><a href="news.php">News</a></li>
+							<li class="menu-item current-menu-item"><a href="news.php">7 Day Forecast</a></li>
 							<li class="menu-item"><a href="photos.html">Photos</a></li>
 							<li class="menu-item"><a href="contact.php">Contact</a></li>
 						</ul> <!-- .menu -->
@@ -126,7 +126,7 @@
 				<div class="container">
 					<div class="breadcrumb">
 						<a href="index.php">Home</a>
-						<span>News</span>
+						<span>7 Day Forecast</span>
 					</div>
 				</div>
 				
