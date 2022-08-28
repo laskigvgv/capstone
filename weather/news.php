@@ -129,9 +129,10 @@
 						<span>7 Day Forecast</span>
 					</div>
 				</div>
-				<div style="width: 1000px; height: 553px; background-image: url('images/toronto.jpeg');">
-					
+				<div class="hero" data-bg-image="images/toronto.jpeg">
+
 				</div>
+
 
 				<div class="forecast-table" style="margin-top: 1%;">
 				<div class="container">
