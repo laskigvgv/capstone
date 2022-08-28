@@ -88,7 +88,7 @@
 			$feels_like_avg_day6 = $decoded_result["day_6"]["feels_like_avg"];
 			$feels_like_avg_day7 = $decoded_result["day_7"]["feels_like_avg"];
 
-?>
+		?>
 
 	</head>
 
