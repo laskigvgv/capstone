@@ -39,13 +39,6 @@
 			$sql = "SELECT one_week FROM week_forecast ORDER BY ind DESC LIMIT 1;";
 			$result = $conn->query($sql)->fetch_assoc();
 			$decoded_result = json_decode($result["one_week"],true);
-			
-			$days = ['day_1','day_2','day_3','day_4','day_5','day_6','day_7'];
-			$measurements = ['date_from_unix', 'temp_min', 'temp_max', 'humidity', 'pressure', 'feels_like_avg'];
-
-
-
-			
 
 			$day1 = date("l", strtotime($decoded_result["day_1"]["date_from_unix"]));
 			$day2 = date("l", strtotime($decoded_result["day_2"]["date_from_unix"]));
