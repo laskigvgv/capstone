@@ -78,7 +78,8 @@
 						</div>
 						<div class="col-md-6 col-md-offset-1">
 							<h2 class="section-title">Contact us</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+							<p>If you are interested in our product and you want to have a personal weather station or you have any questions about our work dont hasitate to contact us via email. <br> 
+							We will be in contact</p>
 							<form action="#" method="POST" class="contact-form">
 								<div class="row">
 									<div class="col-md-6"><input name="first_name" type="text" placeholder="Your name..."></div>
