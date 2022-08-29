@@ -129,7 +129,7 @@
 						<span>7 Day Forecast</span>
 					</div>
 				</div>
-				<div class="hero" data-bg-image="images/toronto.jpeg">
+				<div class="hero" data-bg-image="images/toronto.jpeg" style="margin-top:10px;">
 
 				</div>
 
