@@ -101,8 +101,8 @@
 					<a href="index.php" class="branding">
 						<img src="images/logo.png" alt="" class="logo">
 						<div class="logo-type">
-							<h1 class="site-title">Company name</h1>
-							<small class="site-description">tagline goes here</small>
+							<h1 class="site-title">Gostivar</h1>
+							<small class="site-description">Weather Statioin</small>
 						</div>
 					</a>
 
