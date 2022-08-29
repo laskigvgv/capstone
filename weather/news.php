@@ -263,7 +263,7 @@
 			<footer class="site-footer">
 				<div class="container">
 					<div class="row">
-						<p class="colophon">Made By Lazar Zdravkoski</p>
+						<p class="colophon" style="maring-left:1%;">Made By Lazar Zdravkoski</p>
 
 					</div>
 
