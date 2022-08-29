@@ -263,7 +263,7 @@
 			<footer class="site-footer">
 				<div class="container">
 					<div class="row">
-						<p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+						<p class="colophon">Made By Lazar Zdravkoski</p>
 
 					</div>
 

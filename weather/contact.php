@@ -123,7 +123,7 @@
 						
 					</div>
 
-					<p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+					<p class="colophon">Made By Lazar Zdravkoski</p>
 				</div>
 			</footer> <!-- .site-footer -->
 		</div>

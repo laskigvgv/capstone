@@ -199,7 +199,7 @@ Approximately 26 km (16 mi) from Gostivar is a ski resort, "Zare Lazarevski", in
 					<div class="row">
 						
 
-					<p class="colophon" style = "margin-left: 1%;">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+					<p class="colophon" style = "margin-left: 1%;">Made By Lazar Zdravkoski</p>
 				</div>
 			</footer> <!-- .site-footer -->
 		</div>
