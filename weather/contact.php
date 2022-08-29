@@ -63,16 +63,16 @@
 					<div class="container">
 						<div class="col-md-5">
 							<div class="contact-details">
-								<div class="map" data-latitude="-6.897789" data-longitude="107.621735"></div>
+								<div class="map" data-latitude="41.8026" data-longitude="20.9089"></div>
 								<div class="contact-info">
 									<address>
 										<img src="images/icon-marker.png" alt="">
-										<p>Company Name INC. <br>
-										2803 Avenue Street, Los Angeles</p>
+										<p>Gostivar<br>
+										Gostivar Macedonia</p>
 									</address>
 									
-									<a href="#"><img src="images/icon-phone.png" alt="">+1 800 314 235</a>
-									<a href="#"><img src="images/icon-envelope.png" alt="">contact@companyname.com</a>
+									<a href="#"><img src="images/icon-phone.png" alt="">+072 633 886</a>
+									<a href="#"><img src="images/icon-envelope.png" alt="">zdravkoski.lazar@gmail.com</a>
 								</div>
 							</div>
 						</div>
